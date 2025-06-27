@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className="hidden lg:block">
             <span className="bg-orange-500/20 px-4 py-1 rounded-full text-orange-300 font-medium">
-              Mon - Thur: 8AM - 6PM | Sat: 9AM - 4PM
+              Mon - Thur: 8AM - 8PM | Sat: 8AM - 8PM | Sun: 8AM - 8PM
             </span>
           </div>
         </div>

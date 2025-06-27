@@ -111,19 +111,19 @@ const LocationSection: React.FC = () => {
                     <div className="flex justify-between items-center">
                       <span>Monday - Thursday:</span>
                       <span className="font-semibold text-green-600">
-                        8:00 AM - 6:00 PM
+                        8:00 AM - 8:00 PM
                       </span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span>Saturday:</span>
                       <span className="font-semibold text-green-600">
-                        9:00 AM - 4:00 PM
+                        8:00 AM - 8:00 PM
                       </span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span>Sunday:</span>
                       <span className="font-semibold text-green-600">
-                        9:00 AM - 4:00 PM
+                        8:00 AM - 8:00 PM
                       </span>
                     </div>
                     <div className="flex justify-between items-center">
