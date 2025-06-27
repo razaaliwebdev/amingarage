@@ -3,7 +3,7 @@ import { MessageCircle, Phone, X } from "lucide-react";
 
 const WhatsAppButton: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const phoneNumber = "+923420147371";
+  const phoneNumber = "+923076552348";
   const message =
     "Hello! I'm interested in your premium garage services. Can you help me?";
 
@@ -43,7 +43,7 @@ const WhatsAppButton: React.FC = () => {
             <Phone className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300" />
             <div>
               <div className="font-bold">Call Now</div>
-              <div className="text-sm text-blue-100">+1 (555) 123-4567</div>
+              <div className="text-sm text-blue-100">+92 (307) 6552348</div>
             </div>
           </div>
         </div>

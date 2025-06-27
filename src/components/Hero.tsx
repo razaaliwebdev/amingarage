@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
 
         <h1 className="text-4xl sm:text-6xl lg:text-8xl font-black mb-8 leading-tight animate-fadeInUp animation-delay-200">
           <span className="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
-            Premium Auto Care
+            Amin Auto Care
           </span>
           <span className="block bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 bg-clip-text text-transparent mt-2">
             You Can Trust

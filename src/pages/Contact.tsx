@@ -1,27 +1,52 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import React, { useState } from "react";
+import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import emailjs from "emailjs-com";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: ''
+    full_name: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We\'ll get back to you soon.');
-    setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    emailjs
+      .send(
+        "service_v6zp1th", // Replace with your EmailJS service ID
+        "template_8nexs9m", // Replace with your EmailJS template ID
+        formData, // Must match keys in your template
+        "ykZNcKC8bTtC_Ltpu" // Replace with your EmailJS public key
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Thank you for your message! We'll get back to you soon.");
+          setFormData({
+            full_name: "",
+            email: "",
+            phone: "",
+            service: "",
+            message: "",
+          });
+        },
+        (err) => {
+          console.log("FAILED...", err);
+          alert("Something went wrong. Please try again later.");
+        }
+      );
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -32,8 +57,8 @@ const Contact: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-blue-100">
-            Get in touch with our team for service appointments, quotes, 
-            or any questions about your vehicle.
+            Get in touch with our team for service appointments, quotes, or any
+            questions about your vehicle.
           </p>
         </div>
       </section>
@@ -45,10 +70,12 @@ const Contact: React.FC = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                  Get in Touch
+                </h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Ready to schedule service or have questions? We're here to help! 
-                  Contact us using any of the methods below.
+                  Ready to schedule service or have questions? We're here to
+                  help! Contact us using any of the methods below.
                 </p>
               </div>
 
@@ -56,11 +83,15 @@ const Contact: React.FC = () => {
                 <div className="flex items-start space-x-4">
                   <MapPin className="w-6 h-6 text-orange-500 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Address</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Address
+                    </h3>
                     <p className="text-gray-600">
-                      123 Main Street<br />
-                      Downtown, NY 10001<br />
-                      United States
+                      F2MV+4GC Faqir Wali
+                      <br />
+                      Faqirwali, Bahawalnagar District
+                      <br />
+                      Punjab 62050 Pakistan
                     </p>
                   </div>
                 </div>
@@ -68,28 +99,37 @@ const Contact: React.FC = () => {
                 <div className="flex items-start space-x-4">
                   <Phone className="w-6 h-6 text-orange-500 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-sm text-gray-500">Emergency: +1 (555) 999-HELP</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Phone
+                    </h3>
+                    <p className="text-gray-600">+923076552348</p>
+                    <p className="text-sm text-gray-500">
+                      Emergency: +923076552348
+                    </p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <Mail className="w-6 h-6 text-orange-500 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">contact@primegarage.com</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Email
+                    </h3>
+                    <p className="text-gray-600">amingarage96@gmail.com</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <Clock className="w-6 h-6 text-orange-500 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Business Hours</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Business Hours
+                    </h3>
                     <div className="text-gray-600 space-y-1">
-                      <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                      <p>Saturday: 9:00 AM - 4:00 PM</p>
-                      <p>Sunday: Closed</p>
+                      <p>Monday – Thursday: 8:00 AM – 6:00 PM</p>
+                      <p>Friday: Closed</p>
+                      <p>Saturday: 9:00 AM – 4:00 PM</p>
+                      <p>Sunday: 10:00 AM – 2:00 PM</p>
                     </div>
                   </div>
                 </div>
@@ -97,9 +137,12 @@ const Contact: React.FC = () => {
 
               <div className="bg-blue-600 text-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold mb-2">Quick Quote</h3>
-                <p className="mb-4">Need a quick estimate? Call us directly for immediate assistance.</p>
+                <p className="mb-4">
+                  Need a quick estimate? Call us directly for immediate
+                  assistance.
+                </p>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+923076552348"
                   className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300"
                 >
                   <Phone className="w-5 h-5 mr-2" />
@@ -110,26 +153,34 @@ const Contact: React.FC = () => {
 
             {/* Contact Form */}
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Send us a Message
+              </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Full Name *
                     </label>
                     <input
                       type="text"
                       id="name"
-                      name="name"
+                      name="full_name" // 🔄 Changed from "name"
                       required
-                      value={formData.name}
+                      value={formData.full_name}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
                       placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Email Address *
                     </label>
                     <input
@@ -147,7 +198,10 @@ const Contact: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="phone"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Phone Number
                     </label>
                     <input
@@ -161,7 +215,10 @@ const Contact: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="service"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Service Needed
                     </label>
                     <select
@@ -172,10 +229,18 @@ const Contact: React.FC = () => {
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
                     >
                       <option value="">Select a service</option>
-                      <option value="oil-change">Oil Change & Maintenance</option>
-                      <option value="brake-repair">Brake Repair & Service</option>
-                      <option value="tire-service">Tire Installation & Repair</option>
-                      <option value="engine-diagnostics">Engine Diagnostics</option>
+                      <option value="oil-change">
+                        Oil Change & Maintenance
+                      </option>
+                      <option value="brake-repair">
+                        Brake Repair & Service
+                      </option>
+                      <option value="tire-service">
+                        Tire Installation & Repair
+                      </option>
+                      <option value="engine-diagnostics">
+                        Engine Diagnostics
+                      </option>
                       <option value="ac-repair">AC Repair & Service</option>
                       <option value="transmission">Transmission Service</option>
                       <option value="other">Other</option>
@@ -184,7 +249,10 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Message *
                   </label>
                   <textarea
@@ -223,7 +291,7 @@ const Contact: React.FC = () => {
           </div>
           <div className="h-96 rounded-xl overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1709651234567!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3473.1510133295246!2d73.0411948755323!3d29.482791875211284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDI4JzU4LjEiTiA3M8KwMDInMzcuNiJF!5e0!3m2!1sen!2s!4v1750958993699!5m2!1sen!2s"
               width="100%"
               height="100%"
               style={{ border: 0 }}
