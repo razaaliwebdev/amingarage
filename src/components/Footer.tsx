@@ -156,7 +156,9 @@ const Footer: React.FC = () => {
                 <Phone className="w-6 h-6 text-red-500 group-hover:rotate-12 transition-transform duration-300" />
                 <div>
                   <p className="font-semibold text-white">Phone</p>
-                  <p className="text-gray-300">+92 (307) 6552348</p>
+                  <p className="text-gray-300">
+                    <a href="tel:+923076552348">+92 (307) 6552348</a>
+                  </p>
                 </div>
               </div>
 
@@ -164,7 +166,10 @@ const Footer: React.FC = () => {
                 <Mail className="w-6 h-6 text-red-500 group-hover:scale-110 transition-transform duration-300" />
                 <div>
                   <p className="font-semibold text-white">Email</p>
-                  <p className="text-gray-300">amingarage96@gmail.com</p>
+                  <a href="mailto:amingarage96@gmail.com">
+                    amingarage96@gmail.com
+                  </a>
+                  <p className="text-gray-300"></p>
                 </div>
               </div>
 
