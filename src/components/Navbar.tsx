@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { images } from "../assets/assets.js";
 import { NavLink } from "react-router-dom";
 import { FiPhone, FiMenu, FiX } from "react-icons/fi";
@@ -14,13 +14,32 @@ const navLinks = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show blur effect when scrolling in any direction
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleDrawer = () => {
     setMenuOpen(!menuOpen);
   };
 
   return (
-    <nav className="bg-black sticky top-0 left-0 right-0 w-full h-24 px-4 md:px-8 flex items-center justify-between  z-50">
+    <nav
+      className={`sticky top-0 left-0 right-0 w-full h-24 px-4 md:px-8 flex items-center justify-between z-50 transition-all duration-300 ${
+        scrolled ? "bg-black/80 backdrop-blur-md shadow-lg" : "bg-black"
+      }`}
+    >
       {/* Logo */}
       <NavLink to="/" className="h-20 w-28 flex-shrink-0">
         <img
