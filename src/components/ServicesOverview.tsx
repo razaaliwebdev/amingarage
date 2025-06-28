@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { images } from "../assets/assets.js";
 import {
   Wrench,
   Settings,
@@ -10,6 +11,9 @@ import {
   Zap,
   Shield,
   Clock,
+  Battery,
+  Sparkles,
+  Plug,
 } from "lucide-react";
 
 const ServicesOverview: React.FC = () => {
@@ -24,10 +28,8 @@ const ServicesOverview: React.FC = () => {
         "Multi-Point Inspection",
         "Quick 30-Min Service",
       ],
-      price: "From $39.99",
-      image:
-        "https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=600",
-      gradient: "from-blue-500 to-blue-700",
+      price: "From ₹2,999",
+      image: images.mechanic,
       delay: "0",
     },
     {
@@ -40,10 +42,8 @@ const ServicesOverview: React.FC = () => {
         "Rotor Resurfacing",
         "Safety Guaranteed",
       ],
-      price: "From $149.99",
-      image:
-        "https://images.pexels.com/photos/5835252/pexels-photo-5835252.jpeg?auto=compress&cs=tinysrgb&w=600",
-      gradient: "from-red-500 to-red-700",
+      price: "From ₹11,499",
+      image: images.mechanic1,
       delay: "100",
     },
     {
@@ -56,10 +56,8 @@ const ServicesOverview: React.FC = () => {
         "Precision Balancing",
         "Road Hazard Warranty",
       ],
-      price: "From $25.99",
-      image:
-        "https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg?auto=compress&cs=tinysrgb&w=600",
-      gradient: "from-green-500 to-green-700",
+      price: "From ₹1,999",
+      image: images.danting,
       delay: "200",
     },
     {
@@ -72,10 +70,8 @@ const ServicesOverview: React.FC = () => {
         "Expert Analysis",
         "Detailed Reports",
       ],
-      price: "From $99.99",
-      image:
-        "https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=600",
-      gradient: "from-purple-500 to-purple-700",
+      price: "From ₹7,499",
+      image: images.electrician,
       delay: "300",
     },
     {
@@ -88,10 +84,8 @@ const ServicesOverview: React.FC = () => {
         "Refrigerant Service",
         "Performance Testing",
       ],
-      price: "From $89.99",
-      image:
-        "https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg?auto=compress&cs=tinysrgb&w=600",
-      gradient: "from-cyan-500 to-cyan-700",
+      price: "From ₹6,799",
+      image: images.bodyShop,
       delay: "400",
     },
     {
@@ -100,11 +94,58 @@ const ServicesOverview: React.FC = () => {
       description:
         "Expert transmission care for smooth and reliable performance.",
       features: ["Fluid Service", "Filter Replacement", "Performance Testing"],
-      price: "From $179.99",
-      image:
-        "https://images.pexels.com/photos/3964341/pexels-photo-3964341.jpeg?auto=compress&cs=tinysrgb&w=600",
-      gradient: "from-orange-500 to-orange-700",
+      price: "From ₹13,799",
+      image: images.bodyShop1,
       delay: "500",
+    },
+    {
+      icon: <Battery className="w-10 h-10" />,
+      title: "Battery Replacement",
+      description: "Professional battery testing and replacement services.",
+      features: [
+        "Free Battery Testing",
+        "Premium Batteries",
+        "Proper Disposal",
+      ],
+      price: "From ₹9,999",
+      image: images.mechanic,
+      delay: "600",
+    },
+    {
+      icon: <Sparkles className="w-10 h-10" />,
+      title: "Detailing Services",
+      description:
+        "Complete interior and exterior detailing to restore your vehicle's shine.",
+      features: [
+        "Full Interior Cleaning",
+        "Exterior Polish & Wax",
+        "Odor Elimination",
+      ],
+      price: "From ₹14,999",
+      image: images.danting,
+      delay: "700",
+    },
+    {
+      icon: <Plug className="w-10 h-10" />,
+      title: "Electrical System Repair",
+      description: "Diagnosis and repair of all electrical system components.",
+      features: ["Wiring Repair", "Alternator Testing", "Lighting Systems"],
+      price: "From ₹8,999",
+      image: images.electrician,
+      delay: "800",
+    },
+    {
+      icon: <Shield className="w-10 h-10" />,
+      title: "Suspension Service",
+      description: "Complete suspension inspection and repair services.",
+      features: [
+        "Shock/Strut Replacement",
+        "Alignment Check",
+        "Steering System",
+      ],
+      price: "From ₹11,999",
+      image: images.mechanic1,
+      delay: "900",
     },
   ];
 
@@ -150,9 +191,7 @@ const ServicesOverview: React.FC = () => {
                   alt={service.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div
-                  className={`absolute inset-0 bg-gradient-to-t ${service.gradient} opacity-80 group-hover:opacity-90 transition-opacity duration-300`}
-                ></div>
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-all duration-300"></div>
 
                 {/* Icon Overlay */}
                 <div className="absolute top-6 left-6">
