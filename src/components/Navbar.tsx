@@ -20,9 +20,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black w-full h-20 px-4 md:px-8 flex items-center justify-between relative z-50">
+    <nav className="bg-black w-full h-24 px-4 md:px-8 flex items-center justify-between relative z-50">
       {/* Logo */}
-      <NavLink to="/" className="h-16 w-28 flex-shrink-0">
+      <NavLink to="/" className="h-20 w-28 flex-shrink-0">
         <img
           className="h-full w-full object-contain"
           src={images.logo}
