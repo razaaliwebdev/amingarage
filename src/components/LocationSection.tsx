@@ -98,16 +98,19 @@ const LocationSection: React.FC = () => {
             </div>
 
             {/* Hours Card */}
-            <div className="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="flex items-start space-x-6">
-                <div className="bg-gradient-to-br from-green-500 to-green-700 p-4 rounded-2xl">
+            <div className="group bg-white rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+              <div className="flex flex-col md:flex-row items-start gap-y-6 md:gap-y-0 md:gap-x-6">
+                {/* Icon Section */}
+                <div className="bg-gradient-to-br from-green-500 to-green-700 p-4 rounded-2xl flex-shrink-0">
                   <Clock className="w-8 h-8 text-white group-hover:rotate-12 transition-transform duration-300" />
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+
+                {/* Content Section */}
+                <div className="w-full">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
                     Business Hours
                   </h3>
-                  <div className="text-gray-600 text-lg space-y-2">
+                  <div className="text-gray-600 text-base sm:text-lg space-y-2">
                     <div className="flex justify-between items-center">
                       <span>Monday - Thursday:</span>
                       <span className="font-semibold text-green-600">
@@ -136,29 +139,36 @@ const LocationSection: React.FC = () => {
             </div>
 
             {/* Contact Card */}
-            <div className="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="flex items-start space-x-6">
-                <div className="bg-gradient-to-br from-red-500 to-red-600 p-4 rounded-2xl">
+            <div className="group bg-white rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+              <div className="flex flex-col md:flex-row items-start gap-y-6 md:gap-x-6">
+                {/* Icon */}
+                <div className="bg-gradient-to-br from-red-500 to-red-600 p-4 rounded-2xl flex-shrink-0">
                   <Phone className="w-8 h-8 text-white group-hover:rotate-12 transition-transform duration-300" />
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+
+                {/* Contact Info */}
+                <div className="w-full">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
                     Contact Info
                   </h3>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
                       <Phone className="w-5 h-5 text-red-500" />
-                      <span className="text-gray-600 text-lg">
-                        <a href="tel:+923076552348">+923076552348</a>
-                      </span>
+                      <a
+                        href="tel:+923076552348"
+                        className="text-gray-600 text-base sm:text-lg hover:underline"
+                      >
+                        +92 307 6552348
+                      </a>
                     </div>
-                    <div className="flex items-center space-x-3">
+                    <div className="flex items-center gap-3">
                       <Mail className="w-5 h-5 text-red-500" />
-                      <span className="text-gray-600 text-lg">
-                        <a href="mailto:amingarage96@gmail.com">
-                          amingarage96@gmail.com
-                        </a>
-                      </span>
+                      <a
+                        href="mailto:amingarage96@gmail.com"
+                        className="text-gray-600 text-base sm:text-lg hover:underline break-all"
+                      >
+                        amingarage96@gmail.com
+                      </a>
                     </div>
                   </div>
                 </div>
