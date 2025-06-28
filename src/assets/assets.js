@@ -7,6 +7,8 @@ import bodyShop from './bodyShop.svg';
 import bodyShop1 from './bodyShop1.svg';
 import danting from './danting.svg';
 import electrician from './electrician.svg';
+import paint from './paint.jpg';
+import wheel from './wheel.jpg';
 
 
 export const images = {
@@ -18,6 +20,8 @@ export const images = {
     bodyShop,
     bodyShop1,
     danting,
-    electrician
+    electrician,
+    paint,
+    wheel
 };
 

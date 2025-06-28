@@ -1,10 +1,11 @@
 import React from "react";
 import { Check, Clock, DollarSign } from "lucide-react";
+import { images } from "../assets/assets.js";
 
 const Services: React.FC = () => {
   const services = [
     {
-      title: "Engine Tune-Up",
+      title: "Engine Maintenance",
       description:
         "Complete engine inspection and performance optimization to keep your vehicle running at peak efficiency.",
       features: [
@@ -13,10 +14,9 @@ const Services: React.FC = () => {
         "Air filter replacement",
         "Computer diagnostics",
       ],
-      price: "Starting at $129.99",
-      duration: "1-2 hours",
-      image:
-        "https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg",
+      price: "Starting at ₹9,999",
+      duration: "1–2 hours",
+      image: images.mechanic,
       category: "Mechanic",
     },
     {
@@ -29,10 +29,9 @@ const Services: React.FC = () => {
         "Starter motor service",
         "Wiring diagnostics",
       ],
-      price: "Starting at $89.99",
-      duration: "1-3 hours",
-      image:
-        "https://images.pexels.com/photos/159298/gears-cogwheel-machines-engine-159298.jpeg",
+      price: "Starting at ₹6,999",
+      duration: "1–3 hours",
+      image: images.electrician,
       category: "Electrician",
     },
     {
@@ -45,10 +44,9 @@ const Services: React.FC = () => {
         "Rust repair",
         "Color matching",
       ],
-      price: "Starting at $79.99",
-      duration: "2-4 hours",
-      image:
-        "https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg",
+      price: "Starting at ₹5,999",
+      duration: "2–4 hours",
+      image: images.danting,
       category: "Body Shop",
     },
     {
@@ -61,14 +59,13 @@ const Services: React.FC = () => {
         "Color change options",
         "Paint protection film",
       ],
-      price: "Starting at $999.99",
-      duration: "1-2 days",
-      image:
-        "https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg",
+      price: "Starting at ₹74,999",
+      duration: "1–2 days",
+      image: images.paint,
       category: "Painting",
     },
     {
-      title: "Interior Customization",
+      title: "body Shop",
       description:
         "Enhance your vehicle's interior with our premium customization services.",
       features: [
@@ -77,30 +74,13 @@ const Services: React.FC = () => {
         "LED lighting installation",
         "Sound system upgrades",
       ],
-      price: "Starting at $299.99",
-      duration: "3-5 hours",
-      image:
-        "https://images.pexels.com/photos/1651135/pexels-photo-1651135.jpeg",
-      category: "Dancing",
+      price: "Starting at ₹22,999",
+      duration: "3–5 hours",
+      image: images.bodyShop1,
+      category: "Interior",
     },
     {
-      title: "Brake System Service",
-      description:
-        "Complete brake system inspection and repair for optimal stopping power.",
-      features: [
-        "Brake pad replacement",
-        "Rotor resurfacing",
-        "Brake fluid flush",
-        "Caliper service",
-      ],
-      price: "Starting at $149.99",
-      duration: "2-3 hours",
-      image:
-        "https://images.pexels.com/photos/5835252/pexels-photo-5835252.jpeg",
-      category: "Mechanic",
-    },
-    {
-      title: "AC System Repair",
+      title: "AC System Service",
       description:
         "Professional air conditioning system service and repair to keep you cool.",
       features: [
@@ -109,10 +89,9 @@ const Services: React.FC = () => {
         "Leak detection",
         "Ventilation cleaning",
       ],
-      price: "Starting at $109.99",
-      duration: "1-2 hours",
-      image:
-        "https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg",
+      price: "Starting at ₹8,499",
+      duration: "1–2 hours",
+      image: images.electrician,
       category: "Electrician",
     },
     {
@@ -125,11 +104,69 @@ const Services: React.FC = () => {
         "Decal application",
         "Clear coat protection",
       ],
-      price: "Starting at $799.99",
-      duration: "3-5 days",
-      image:
-        "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg",
+      price: "Starting at ₹59,999",
+      duration: "3–5 days",
+      image: images.paint,
       category: "Painting",
+    },
+    {
+      title: "Transmission Service",
+      description:
+        "Complete transmission inspection, fluid change, and adjustment services.",
+      features: [
+        "Transmission fluid change",
+        "Filter replacement",
+        "Diagnostic scan",
+        "Performance testing",
+      ],
+      price: "Starting at ₹14,999",
+      duration: "3–4 hours",
+      image: images.mechanic1,
+      category: "Mechanic",
+    },
+    {
+      title: "Wheel Alignment",
+      description:
+        "Precision wheel alignment to ensure proper handling and tire wear.",
+      features: [
+        "Four-wheel alignment",
+        "Steering adjustment",
+        "Suspension check",
+        "Tire inspection",
+      ],
+      price: "Starting at ₹3,999",
+      duration: "1 hour",
+      image: images.wheel,
+      category: "Mechanic",
+    },
+    {
+      title: "Exhaust System Repair",
+      description: "Complete exhaust system inspection and repair services.",
+      features: [
+        "Muffler replacement",
+        "Catalytic converter service",
+        "Pipe welding",
+        "Emission testing",
+      ],
+      price: "Starting at ₹7,999",
+      duration: "2–3 hours",
+      image: images.mechanic,
+      category: "Mechanic",
+    },
+    {
+      title: "Window Tinting",
+      description:
+        "Professional window tinting services for privacy and UV protection.",
+      features: [
+        "Premium tint films",
+        "UV protection",
+        "Heat reduction",
+        "Lifetime warranty",
+      ],
+      price: "Starting at ₹12,999",
+      duration: "2–3 hours",
+      image: images.bodyShop,
+      category: "Body Shop",
     },
   ];
 
@@ -138,8 +175,8 @@ const Services: React.FC = () => {
     "Mechanic",
     "Electrician",
     "Body Shop",
-    "Danting",
     "Painting",
+    "Interior",
   ];
   const [activeCategory, setActiveCategory] = React.useState("All");
 
@@ -192,12 +229,13 @@ const Services: React.FC = () => {
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="md:flex">
-                  <div className="md:w-1/3">
+                  <div className="md:w-1/3 relative">
                     <img
                       src={service.image}
                       alt={service.title}
                       className="w-full h-48 md:h-full object-cover"
                     />
+                    <div className="absolute inset-0 bg-black/10 hover:bg-black/20 transition-all duration-300"></div>
                   </div>
                   <div className="md:w-2/3 p-6">
                     <div className="flex justify-between items-start">
