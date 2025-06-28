@@ -88,7 +88,7 @@ const Gallery: React.FC = () => {
   return (
     <div className="pt-24">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-red-600 to-red-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-red-600 to-red-800 text-[#C0C0C0]">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Gallery</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-red-100">
@@ -108,7 +108,7 @@ const Gallery: React.FC = () => {
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-2 rounded-full font-medium transition-colors duration-200 ${
                   activeCategory === category
-                    ? "bg-red-600 text-white"
+                    ? "bg-red-600 text-[#C0C0C0]"
                     : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                 }`}
               >
@@ -135,7 +135,7 @@ const Gallery: React.FC = () => {
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                  <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                  <div className="text-[#C0C0C0] opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
                     <p className="text-lg font-semibold">{image.alt}</p>
                     <p className="text-sm text-gray-300">{image.category}</p>
                   </div>
@@ -159,7 +159,7 @@ const Gallery: React.FC = () => {
             {/* Close Button */}
             <button
               onClick={closeLightbox}
-              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors duration-200"
+              className="absolute top-4 right-4 text-[#C0C0C0] hover:text-gray-300 transition-colors duration-200"
             >
               <X className="w-8 h-8" />
             </button>
@@ -167,20 +167,20 @@ const Gallery: React.FC = () => {
             {/* Navigation Buttons */}
             <button
               onClick={() => navigateImage("prev")}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors duration-200"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-[#C0C0C0] hover:text-gray-300 transition-colors duration-200"
             >
               <ChevronLeft className="w-8 h-8" />
             </button>
 
             <button
               onClick={() => navigateImage("next")}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors duration-200"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#C0C0C0]hover:text-gray-300 transition-colors duration-200"
             >
               <ChevronRight className="w-8 h-8" />
             </button>
 
             {/* Image Info */}
-            <div className="absolute bottom-4 left-4 text-white">
+            <div className="absolute bottom-4 left-4 text-[#C0C0C0]">
               <p className="text-lg font-semibold">
                 {filteredImages[selectedImage].alt}
               </p>
