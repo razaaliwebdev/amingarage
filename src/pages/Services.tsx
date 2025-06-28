@@ -138,7 +138,7 @@ const Services: React.FC = () => {
     "Mechanic",
     "Electrician",
     "Body Shop",
-    "Dancing",
+    "Danting",
     "Painting",
   ];
   const [activeCategory, setActiveCategory] = React.useState("All");
