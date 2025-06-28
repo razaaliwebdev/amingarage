@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <span className="text-3xl font-black bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
-                  Prime Garage
+                  Amin Garage
                 </span>
                 <div className="text-orange-400 font-semibold">
                   Premium Auto Care

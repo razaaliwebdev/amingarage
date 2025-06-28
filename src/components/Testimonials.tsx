@@ -1,5 +1,5 @@
-import React from 'react';
-import { Star, Quote, ThumbsUp, Heart } from 'lucide-react';
+import React from "react";
+import { Star, Quote, ThumbsUp, Heart } from "lucide-react";
 
 const Testimonials: React.FC = () => {
   const testimonials = [
@@ -7,29 +7,35 @@ const Testimonials: React.FC = () => {
       name: "Sarah Johnson",
       position: "Business Owner",
       rating: 5,
-      comment: "Absolutely exceptional service! The team at Prime Garage went above and beyond to fix my transmission issue. Their expertise and honest pricing make them my go-to automotive service center.",
-      image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150",
+      comment:
+        "Absolutely exceptional service! The team at Prime Garage went above and beyond to fix my transmission issue. Their expertise and honest pricing make them my go-to automotive service center.",
+      image:
+        "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150",
       service: "Transmission Repair",
-      delay: "0"
+      delay: "0",
     },
     {
       name: "Mike Rodriguez",
       position: "Fleet Manager",
       rating: 5,
-      comment: "I've been bringing our company vehicles here for over 3 years. Consistently reliable, professional, and they always deliver on time. The quality of work is outstanding!",
-      image: "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150",
+      comment:
+        "I've been bringing our company vehicles here for over 3 years. Consistently reliable, professional, and they always deliver on time. The quality of work is outstanding!",
+      image:
+        "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150",
       service: "Fleet Maintenance",
-      delay: "200"
+      delay: "200",
     },
     {
       name: "Emily Chen",
       position: "Marketing Director",
       rating: 5,
-      comment: "Prime Garage saved me thousands! They diagnosed my engine issue accurately and provided a cost-effective solution. Their transparency and expertise are unmatched.",
-      image: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150",
+      comment:
+        "Prime Garage saved me thousands! They diagnosed my engine issue accurately and provided a cost-effective solution. Their transparency and expertise are unmatched.",
+      image:
+        "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150",
       service: "Engine Diagnostics",
-      delay: "400"
-    }
+      delay: "400",
+    },
   ];
 
   return (
@@ -37,23 +43,23 @@ const Testimonials: React.FC = () => {
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Enhanced Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center bg-green-100 text-green-800 px-6 py-3 rounded-full font-semibold mb-8">
+          <div className="inline-flex items-center bg-red-100 text-red-800 px-6 py-3 rounded-full font-semibold mb-8">
             <Heart className="w-5 h-5 mr-2" />
             Customer Love
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-800 bg-clip-text text-transparent">
               What Our Customers
             </span>
             <br />
             <span className="text-gray-800">Say About Us</span>
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our satisfied customers 
+            Don't just take our word for it. Here's what our satisfied customers
             have to say about their experience with Prime Garage.
           </p>
         </div>
@@ -68,10 +74,10 @@ const Testimonials: React.FC = () => {
             >
               {/* Background Gradient */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
-              
+
               {/* Quote Icon */}
               <div className="relative z-10 mb-6">
-                <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-4 rounded-2xl w-fit">
+                <div className="bg-gradient-to-br from-red-400 to-red-500 p-4 rounded-2xl w-fit">
                   <Quote className="w-8 h-8 text-white" />
                 </div>
               </div>
@@ -79,7 +85,10 @@ const Testimonials: React.FC = () => {
               {/* Rating */}
               <div className="flex items-center mb-6 relative z-10">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 text-yellow-400 fill-current mr-1" />
+                  <Star
+                    key={i}
+                    className="w-6 h-6 text-yellow-400 fill-current mr-1"
+                  />
                 ))}
                 <span className="ml-2 text-gray-600 font-semibold">5.0</span>
               </div>
@@ -97,14 +106,20 @@ const Testimonials: React.FC = () => {
                     alt={testimonial.name}
                     className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"
                   />
-                  <div className="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                  <div className="absolute -bottom-1 -right-1 bg-red-500 w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
                     <ThumbsUp className="w-3 h-3 text-white" />
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-bold text-gray-900 text-lg">{testimonial.name}</h4>
-                  <p className="text-gray-600 font-medium">{testimonial.position}</p>
-                  <p className="text-blue-600 text-sm font-semibold">{testimonial.service}</p>
+                  <h4 className="font-bold text-gray-900 text-lg">
+                    {testimonial.name}
+                  </h4>
+                  <p className="text-gray-600 font-medium">
+                    {testimonial.position}
+                  </p>
+                  <p className="text-blue-600 text-sm font-semibold">
+                    {testimonial.service}
+                  </p>
                 </div>
               </div>
             </div>
@@ -112,7 +127,7 @@ const Testimonials: React.FC = () => {
         </div>
 
         {/* Enhanced Stats Section */}
-        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 rounded-3xl p-12 text-white relative overflow-hidden">
+        <div className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 rounded-3xl p-12 text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-pulse"></div>
           <div className="relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">

@@ -1,53 +1,53 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Eye, Camera, Star } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight, Eye, Camera, Star } from "lucide-react";
 
 const GalleryPreview: React.FC = () => {
   const galleryImages = [
     {
       src: "https://images.pexels.com/photos/3593922/pexels-photo-3593922.jpeg?auto=compress&cs=tinysrgb&w=600",
       alt: "Modern garage facility",
-      category: "Facility"
+      category: "Facility",
     },
     {
       src: "https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg?auto=compress&cs=tinysrgb&w=600",
       alt: "Professional mechanics at work",
-      category: "Team"
+      category: "Team",
     },
     {
       src: "https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg?auto=compress&cs=tinysrgb&w=600",
       alt: "Tire installation service",
-      category: "Service"
+      category: "Service",
     },
     {
       src: "https://images.pexels.com/photos/5835252/pexels-photo-5835252.jpeg?auto=compress&cs=tinysrgb&w=600",
       alt: "Brake repair service",
-      category: "Service"
+      category: "Service",
     },
     {
       src: "https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=600",
       alt: "Engine diagnostics",
-      category: "Technology"
+      category: "Technology",
     },
     {
       src: "https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=600",
       alt: "Oil change service",
-      category: "Service"
-    }
+      category: "Service",
+    },
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white relative overflow-hidden">
+    <section className="py-24 bg-black text-white relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl animate-pulse animation-delay-1000"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse animation-delay-1000"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-500/5 rounded-full blur-2xl animate-ping"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Enhanced Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full font-semibold mb-8">
-            <Camera className="w-5 h-5 mr-2 text-orange-400" />
+            <Camera className="w-5 h-5 mr-2 text-red-400" />
             Visual Excellence
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-8">
@@ -55,12 +55,12 @@ const GalleryPreview: React.FC = () => {
               Our Work in
             </span>
             <br />
-            <span className="bg-gradient-to-r from-orange-400 via-red-500 to-orange-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-red-300 via-red-400 to-red-500 bg-clip-text text-transparent">
               Action
             </span>
           </h2>
           <p className="text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Step inside our state-of-the-art facility and witness the precision, 
+            Step inside our state-of-the-art facility and witness the precision,
             expertise, and dedication that goes into every service we provide.
           </p>
         </div>
@@ -80,13 +80,13 @@ const GalleryPreview: React.FC = () => {
                   alt={image.alt}
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
                 />
-                
+
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
-                
+
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-orange-600/20 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-red-600/20 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+
                 {/* Content Overlay */}
                 <div className="absolute inset-0 flex flex-col justify-between p-6">
                   {/* Category Badge */}
@@ -95,14 +95,19 @@ const GalleryPreview: React.FC = () => {
                       {image.category}
                     </span>
                   </div>
-                  
+
                   {/* Bottom Content */}
                   <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-white font-bold text-lg mb-2">{image.alt}</h3>
+                    <h3 className="text-white font-bold text-lg mb-2">
+                      {image.alt}
+                    </h3>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-1">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                          <Star
+                            key={i}
+                            className="w-4 h-4 text-yellow-400 fill-current"
+                          />
                         ))}
                       </div>
                       <div className="bg-white/20 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110">
@@ -127,12 +132,12 @@ const GalleryPreview: React.FC = () => {
                 </span>
               </h3>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Explore our complete gallery showcasing years of automotive excellence 
-                and customer satisfaction.
+                Explore our complete gallery showcasing years of automotive
+                excellence and customer satisfaction.
               </p>
               <Link
                 to="/gallery"
-                className="group inline-flex items-center bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25"
+                className="group inline-flex items-center bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-red-500/25"
               >
                 <Camera className="mr-3 w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
                 View Full Gallery
