@@ -180,7 +180,7 @@ const LocationSection: React.FC = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="tel:+15559999435"
+                    href="tel:+923076552348"
                     className="bg-white text-red-600 hover:bg-gray-100 px-6 py-3 rounded-xl font-bold transition-all duration-300 hover:scale-105 flex items-center justify-center"
                   >
                     <Phone className="w-5 h-5 mr-2" />
