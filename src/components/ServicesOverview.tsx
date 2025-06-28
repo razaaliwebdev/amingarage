@@ -76,7 +76,7 @@ const ServicesOverview: React.FC = () => {
     },
     {
       icon: <Snowflake className="w-10 h-10" />,
-      title: "AC Repair & Service",
+      title: "Body Shop",
       description:
         "Complete air conditioning system service for optimal comfort.",
       features: [
