@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -8,56 +8,57 @@ const Gallery: React.FC = () => {
     {
       src: "https://images.pexels.com/photos/3593922/pexels-photo-3593922.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Modern garage facility exterior",
-      category: "Facility"
+      category: "Facility",
     },
     {
       src: "https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Professional mechanics at work",
-      category: "Team"
+      category: "Team",
     },
     {
       src: "https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Tire installation service",
-      category: "Services"
+      category: "Services",
     },
     {
       src: "https://images.pexels.com/photos/5835252/pexels-photo-5835252.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Brake repair service",
-      category: "Services"
+      category: "Services",
     },
     {
       src: "https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Engine diagnostics",
-      category: "Services"
+      category: "Services",
     },
     {
       src: "https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Oil change service",
-      category: "Services"
+      category: "Services",
     },
     {
       src: "https://images.pexels.com/photos/3964341/pexels-photo-3964341.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Transmission service",
-      category: "Services"
+      category: "Services",
     },
     {
       src: "https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Garage workshop interior",
-      category: "Facility"
+      category: "Facility",
     },
     {
       src: "https://images.pexels.com/photos/4489695/pexels-photo-4489695.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Auto repair tools",
-      category: "Equipment"
-    }
+      category: "Equipment",
+    },
   ];
 
   const categories = ["All", "Facility", "Services", "Team", "Equipment"];
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredImages = activeCategory === "All" 
-    ? galleryImages 
-    : galleryImages.filter(img => img.category === activeCategory);
+  const filteredImages =
+    activeCategory === "All"
+      ? galleryImages
+      : galleryImages.filter((img) => img.category === activeCategory);
 
   const openLightbox = (index: number) => {
     setSelectedImage(index);
@@ -67,30 +68,32 @@ const Gallery: React.FC = () => {
     setSelectedImage(null);
   };
 
-  const navigateImage = (direction: 'prev' | 'next') => {
+  const navigateImage = (direction: "prev" | "next") => {
     if (selectedImage === null) return;
-    
+
     const currentIndex = selectedImage;
     let newIndex;
-    
-    if (direction === 'prev') {
-      newIndex = currentIndex > 0 ? currentIndex - 1 : filteredImages.length - 1;
+
+    if (direction === "prev") {
+      newIndex =
+        currentIndex > 0 ? currentIndex - 1 : filteredImages.length - 1;
     } else {
-      newIndex = currentIndex < filteredImages.length - 1 ? currentIndex + 1 : 0;
+      newIndex =
+        currentIndex < filteredImages.length - 1 ? currentIndex + 1 : 0;
     }
-    
+
     setSelectedImage(newIndex);
   };
 
   return (
     <div className="pt-24">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-red-600 to-red-800 text-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Gallery</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto text-blue-100">
-            Take a visual tour of our state-of-the-art facility, skilled technicians, 
-            and the quality work we deliver every day.
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto text-red-100">
+            Take a visual tour of our state-of-the-art facility, skilled
+            technicians, and the quality work we deliver every day.
           </p>
         </div>
       </section>
@@ -105,8 +108,8 @@ const Gallery: React.FC = () => {
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-2 rounded-full font-medium transition-colors duration-200 ${
                   activeCategory === category
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    ? "bg-red-600 text-white"
+                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                 }`}
               >
                 {category}
@@ -152,7 +155,7 @@ const Gallery: React.FC = () => {
               alt={filteredImages[selectedImage].alt}
               className="max-w-full max-h-full object-contain"
             />
-            
+
             {/* Close Button */}
             <button
               onClick={closeLightbox}
@@ -163,14 +166,14 @@ const Gallery: React.FC = () => {
 
             {/* Navigation Buttons */}
             <button
-              onClick={() => navigateImage('prev')}
+              onClick={() => navigateImage("prev")}
               className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors duration-200"
             >
               <ChevronLeft className="w-8 h-8" />
             </button>
-            
+
             <button
-              onClick={() => navigateImage('next')}
+              onClick={() => navigateImage("next")}
               className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors duration-200"
             >
               <ChevronRight className="w-8 h-8" />
@@ -178,9 +181,12 @@ const Gallery: React.FC = () => {
 
             {/* Image Info */}
             <div className="absolute bottom-4 left-4 text-white">
-              <p className="text-lg font-semibold">{filteredImages[selectedImage].alt}</p>
+              <p className="text-lg font-semibold">
+                {filteredImages[selectedImage].alt}
+              </p>
               <p className="text-sm text-gray-300">
-                {selectedImage + 1} of {filteredImages.length} | {filteredImages[selectedImage].category}
+                {selectedImage + 1} of {filteredImages.length} |{" "}
+                {filteredImages[selectedImage].category}
               </p>
             </div>
           </div>
