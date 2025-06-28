@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
                 <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
               <a
-                href=""
+                href="https://x.com/amingarage96"
                 className="group bg-white/10 hover:bg-blue-400 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Twitter className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
                 <Youtube className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
               <a
-                href="#"
+                href="https://www.tiktok.com/@amingarage96?lang=en-GB"
                 className="group bg-white/10 hover:bg-black p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <SiTiktok className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
