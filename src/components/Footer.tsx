@@ -17,9 +17,9 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-red-900 via-purple-900 to-gray-900 text-white relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
@@ -27,11 +27,11 @@ const Footer: React.FC = () => {
           {/* Enhanced Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="bg-gradient-to-br from-orange-500 to-red-600 p-3 rounded-2xl">
+              <div className="bg-gradient-to-br from-red-500 to-purple-600 p-3 rounded-2xl">
                 <Wrench className="w-10 h-10 text-white" />
               </div>
               <div>
-                <span className="text-3xl font-black bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+                <span className="text-3xl font-black bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
                   Prime Garage
                 </span>
                 <div className="text-orange-400 font-semibold">
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="group bg-white/10 hover:bg-blue-600 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="group bg-white/10 hover:bg-red-600 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Facebook className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
               </a>
               <a
                 href="#"
-                className="group bg-white/10 hover:bg-blue-400 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="group bg-white/10 hover:bg-purple-400 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Twitter className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
 
           {/* Enhanced Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+            <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
               Quick Links
             </h3>
             <ul className="space-y-4">
@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
                     to={link.to}
                     className="group flex items-center text-gray-300 hover:text-white transition-all duration-300"
                   >
-                    <div className="w-2 h-2 bg-orange-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></div>
+                    <div className="w-2 h-2 bg-red-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></div>
                     {link.label}
                   </Link>
                 </li>
@@ -120,12 +120,12 @@ const Footer: React.FC = () => {
 
           {/* Enhanced Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+            <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
               Contact Info
             </h3>
             <div className="space-y-6">
               <div className="group flex items-start space-x-4">
-                <MapPin className="w-6 h-6 text-orange-500 mt-1 group-hover:bounce transition-transform duration-300" />
+                <MapPin className="w-6 h-6 text-red-500 mt-1 group-hover:bounce transition-transform duration-300" />
                 <div className="text-gray-300">
                   <p className="font-semibold text-white">Address</p>
                   <p className="">
@@ -139,7 +139,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div className="group flex items-center space-x-4">
-                <Phone className="w-6 h-6 text-orange-500 group-hover:rotate-12 transition-transform duration-300" />
+                <Phone className="w-6 h-6 text-red-500 group-hover:rotate-12 transition-transform duration-300" />
                 <div>
                   <p className="font-semibold text-white">Phone</p>
                   <p className="text-gray-300">+92 (307) 6552348</p>
@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div className="group flex items-center space-x-4">
-                <Mail className="w-6 h-6 text-orange-500 group-hover:scale-110 transition-transform duration-300" />
+                <Mail className="w-6 h-6 text-red-500 group-hover:scale-110 transition-transform duration-300" />
                 <div>
                   <p className="font-semibold text-white">Email</p>
                   <p className="text-gray-300">amingarage96@gmail.com</p>
