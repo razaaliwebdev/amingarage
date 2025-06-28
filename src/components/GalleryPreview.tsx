@@ -127,7 +127,7 @@ const GalleryPreview: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-pulse"></div>
             <div className="relative z-10">
               <h3 className="text-3xl lg:text-4xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-red-300 via-red-400 to-red-500 bg-clip-text text-transparent">
                   See More Amazing Work
                 </span>
               </h3>
