@@ -149,13 +149,15 @@ const LocationSection: React.FC = () => {
                     <div className="flex items-center space-x-3">
                       <Phone className="w-5 h-5 text-red-500" />
                       <span className="text-gray-600 text-lg">
-                        +923076552348
+                        <a href="tel:+923076552348">+923076552348</a>
                       </span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <Mail className="w-5 h-5 text-red-500" />
                       <span className="text-gray-600 text-lg">
-                        amingarage96@gmail.com
+                        <a href="mailto:amingarage96@gmail.com">
+                          amingarage96@gmail.com
+                        </a>
                       </span>
                     </div>
                   </div>
