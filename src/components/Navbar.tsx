@@ -31,7 +31,7 @@ const Navbar = () => {
       </NavLink>
 
       {/* Desktop Nav */}
-      <div className="hidden md:flex items-center gap-8 text-white">
+      <div className="hidden md:flex items-center gap-8 text-[#C0C0C0]">
         {navLinks.map((link) => (
           <NavLink
             key={link.path}
@@ -52,13 +52,16 @@ const Navbar = () => {
 
       {/* Desktop Button */}
       <NavLink to="/contact" className="hidden md:flex">
-        <button className="text-white flex items-center gap-2 text-sm md:text-lg bg-red-600 px-5 py-2 rounded-md hover:bg-red-700 transition-all duration-300">
+        <button className="text-[#C0C0C0] flex items-center gap-2 text-sm md:text-lg bg-red-600 px-5 py-2 rounded-md hover:bg-red-700 transition-all duration-300">
           <FiPhone /> <span>Get Quote</span>
         </button>
       </NavLink>
 
       {/* Hamburger Button */}
-      <button onClick={toggleDrawer} className="text-white text-2xl md:hidden">
+      <button
+        onClick={toggleDrawer}
+        className="text-[#C0C0C0] text-2xl md:hidden"
+      >
         {menuOpen ? <FiX /> : <FiMenu />}
       </button>
 
@@ -71,13 +74,13 @@ const Navbar = () => {
         {/* Sidebar Header with Close Icon */}
         <div className="flex justify-between items-center p-4 border-b border-gray-700">
           <h2 className="text-white text-xl font-semibold">AminGarage</h2>
-          <button onClick={toggleDrawer} className="text-white text-2xl">
+          <button onClick={toggleDrawer} className="text-[#C0C0C0] text-2xl">
             <FiX />
           </button>
         </div>
 
         {/* Sidebar Links */}
-        <div className="flex flex-col gap-6 px-6 pt-6 text-white text-base">
+        <div className="flex flex-col gap-6 px-6 pt-6 text-[#C0C0C0] text-base">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
@@ -98,7 +101,7 @@ const Navbar = () => {
 
           {/* Sidebar Button */}
           <NavLink to="/contact" onClick={toggleDrawer}>
-            <button className="text-white flex items-center gap-2 text-base bg-red-600 px-4 py-2 rounded-md hover:bg-red-700 transition-all duration-300 mt-6">
+            <button className="text-[#C0C0C0] flex items-center gap-2 text-base bg-red-600 px-4 py-2 rounded-md hover:bg-red-700 transition-all duration-300 mt-6">
               <FiPhone /> <span>Get Quote</span>
             </button>
           </NavLink>
