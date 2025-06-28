@@ -15,6 +15,7 @@ import {
   Sparkles,
   Plug,
 } from "lucide-react";
+import BannerSlider from "./BannerSlider.js";
 
 const ServicesOverview: React.FC = () => {
   const services = [
@@ -247,7 +248,7 @@ const ServicesOverview: React.FC = () => {
         </div>
 
         {/* Enhanced CTA Section */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <div className="bg-[#C0C0C0] rounded-3xl p-12 text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-pulse"></div>
             <div className="relative z-10">
@@ -276,6 +277,10 @@ const ServicesOverview: React.FC = () => {
               </div>
             </div>
           </div>
+        </div> */}
+
+        <div className="slider h-[40vh] w-full bg-red-300">
+          <BannerSlider />
         </div>
       </div>
 
