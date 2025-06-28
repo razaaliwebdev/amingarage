@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black w-full h-24 px-4 md:px-8 flex items-center justify-between relative z-50">
+    <nav className="bg-black sticky top-0 left-0 right-0 w-full h-24 px-4 md:px-8 flex items-center justify-between  z-50">
       {/* Logo */}
       <NavLink to="/" className="h-20 w-28 flex-shrink-0">
         <img
