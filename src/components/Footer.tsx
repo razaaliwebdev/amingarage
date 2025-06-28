@@ -73,13 +73,13 @@ const Footer: React.FC = () => {
             {/* Enhanced Social Links */}
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://web.facebook.com/profile.php?id=61578059121001"
                 className="group bg-white/10 hover:bg-blue-600 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Facebook className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
               <a
-                href="#"
+                href=""
                 className="group bg-white/10 hover:bg-pink-600 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
                 <Twitter className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@AminGarage-n6b"
                 className="group bg-white/10 hover:bg-red-600 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Youtube className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
