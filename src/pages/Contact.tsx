@@ -15,10 +15,10 @@ const Contact: React.FC = () => {
     e.preventDefault();
     emailjs
       .send(
-        "service_v6zp1th", // Replace with your EmailJS service ID
-        "template_8nexs9m", // Replace with your EmailJS template ID
-        formData, // Must match keys in your template
-        "ykZNcKC8bTtC_Ltpu" // Replace with your EmailJS public key
+        "service_v6zp1th",
+        "template_8nexs9m",
+        formData,
+        "ykZNcKC8bTtC_Ltpu"
       )
       .then(
         (response) => {
@@ -63,11 +63,11 @@ const Contact: React.FC = () => {
         </div>
       </section>
 
-      {/* Contact Information & Form */}
+      {/* Contact Info & Form */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
+            {/* Info Section */}
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -102,9 +102,16 @@ const Contact: React.FC = () => {
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">
                       Phone
                     </h3>
-                    <p className="text-gray-600">+923076552348</p>
+                    <p className="text-gray-600">
+                      <a href="tel:+923076552348" className="hover:underline">
+                        +92 307 6552348
+                      </a>
+                    </p>
                     <p className="text-sm text-gray-500">
-                      Emergency: +923076552348
+                      Emergency:{" "}
+                      <a href="tel:+923076552348" className="hover:underline">
+                        +92 307 6552348
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -115,7 +122,14 @@ const Contact: React.FC = () => {
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">
                       Email
                     </h3>
-                    <p className="text-gray-600">amingarage96@gmail.com</p>
+                    <p className="text-gray-600">
+                      <a
+                        href="mailto:amingarage96@gmail.com"
+                        className="hover:underline"
+                      >
+                        amingarage96@gmail.com
+                      </a>
+                    </p>
                   </div>
                 </div>
 
@@ -151,7 +165,7 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Contact Form */}
+            {/* Form Section */}
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Send us a Message
@@ -168,7 +182,7 @@ const Contact: React.FC = () => {
                     <input
                       type="text"
                       id="name"
-                      name="full_name" // 🔄 Changed from "name"
+                      name="full_name"
                       required
                       value={formData.full_name}
                       onChange={handleChange}
@@ -280,7 +294,7 @@ const Contact: React.FC = () => {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Google Map Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
@@ -298,7 +312,7 @@ const Contact: React.FC = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Prime Garage Location"
+              title="Amin Garage Location"
             ></iframe>
           </div>
         </div>
