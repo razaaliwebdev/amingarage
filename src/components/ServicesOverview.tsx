@@ -247,40 +247,11 @@ const ServicesOverview: React.FC = () => {
           ))}
         </div>
 
-        {/* Enhanced CTA Section */}
-        {/* <div className="text-center">
-          <div className="bg-[#C0C0C0] rounded-3xl p-12 text-white relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-pulse"></div>
-            <div className="relative z-10">
-              <h3 className="text-3xl text-black lg:text-4xl font-bold mb-6">
-                Ready for Premium Service?
-              </h3>
-              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                Experience the difference of professional automotive care with
-                our expert team.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  to="/services"
-                  className="bg-red-500 text-white hover:bg-red-600 px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center"
-                >
-                  <Wrench className="mr-2 w-5 h-5" />
-                  View All Services
-                </Link>
-                <Link
-                  to="/contact"
-                  className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 flex items-center justify-center"
-                >
-                  <Clock className="mr-2 w-5 h-5" />
-                  Schedule Now
-                </Link>
-              </div>
-            </div>
+        {/* Slider */}
+        <div className="px-4 sm:px-6 lg:px-8 py-6">
+          <div className="slider rounded-md shadow-lg shadow-gray-700 overflow-hidden bg-red-300 h-64 sm:h-72 md:h-[40vh] w-full">
+            <BannerSlider />
           </div>
-        </div> */}
-
-        <div className="slider rounded-md shadow-lg shadow-gray-700 overflow-hidden md:h-[40vh] md:w-full bg-red-300">
-          <BannerSlider />
         </div>
       </div>
 
