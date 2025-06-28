@@ -11,7 +11,9 @@ import {
   Star,
   Award,
   Shield,
+  Youtube,
 } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -27,7 +29,7 @@ const Footer: React.FC = () => {
           {/* Enhanced Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="bg-gradient-to-br from-red-500 to-purple-600 p-3 rounded-2xl">
+              <div className="bg-gradient-to-br from-red-400 via-red-700 to-red-500 p-3 rounded-2xl">
                 <Wrench className="w-10 h-10 text-white" />
               </div>
               <div>
@@ -72,7 +74,7 @@ const Footer: React.FC = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="group bg-white/10 hover:bg-red-600 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="group bg-white/10 hover:bg-blue-600 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Facebook className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
@@ -84,9 +86,21 @@ const Footer: React.FC = () => {
               </a>
               <a
                 href="#"
-                className="group bg-white/10 hover:bg-purple-400 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="group bg-white/10 hover:bg-blue-400 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Twitter className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
+              </a>
+              <a
+                href="#"
+                className="group bg-white/10 hover:bg-red-600 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
+              >
+                <Youtube className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
+              </a>
+              <a
+                href="#"
+                className="group bg-white/10 hover:bg-black p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
+              >
+                <SiTiktok className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
             </div>
           </div>
