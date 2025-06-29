@@ -23,34 +23,32 @@ const BannerSlider = ({ autoPlay = true, interval = 5000 }) => {
 
   return (
     <div className="relative w-full h-full overflow-hidden">
-      {Array.from({ length: totalSlides }).map((_, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out ${
-            index === currentIndex
-              ? "opacity-100"
-              : "opacity-0 pointer-events-none"
-          }`}
-        >
-          {/* Desktop Image */}
-          <img
-            src={desktopImages[index]}
-            alt={`Slide ${index + 1}`}
-            className="hidden md:block w-full h-full object-cover"
-          />
-          {/* <img
-            src={banner3}
-            alt=""
-            className="hidden md:block w-full h-full object-cover"
-          /> */}
-          {/* Mobile Image */}
-          <img
-            src={mobileImages[index]}
-            alt={`Slide ${index + 1}`}
-            className="block md:hidden w-full h-full object-cover"
-          />
-        </div>
-      ))}
+      <div
+        className="flex w-full h-full transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {Array.from({ length: totalSlides }).map((_, index) => (
+          <div key={index} className="flex-shrink-0 w-full h-full">
+            {/* Desktop Image */}
+            <img
+              src={desktopImages[index]}
+              alt={`Slide ${index + 1}`}
+              className="hidden md:block w-full h-full object-cover"
+            />
+            {/* <img
+              src={banner3}
+              alt=""
+              className="hidden md:block w-full h-full object-cover"
+            /> */}
+            {/* Mobile Image */}
+            <img
+              src={mobileImages[index]}
+              alt={`Slide ${index + 1}`}
+              className="block md:hidden w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -14,11 +14,11 @@ import wheel from './wheel.jpg';
 // import banner3 from './slides/banner3.jpg';
 // import banner4 from './slides/banner4.jpg';
 // import banner5 from './slides/banner5.jpg';
-import mb1 from "./slides/mb1.jpg";
-import mb2 from "./slides/mb2.jpg";
-import mb3 from "./slides/mb3.jpg";
-import mb4 from "./slides/mb4.jpg";
-import mb5 from "./slides/mb5.jpg";
+// import mb1 from "./slides/mb1.jpg";
+// import mb2 from "./slides/mb2.jpg";
+// import mb3 from "./slides/mb3.jpg";
+// import mb4 from "./slides/mb4.jpg";
+// import mb5 from "./slides/mb5.jpg";
 
 
 export const images = {
