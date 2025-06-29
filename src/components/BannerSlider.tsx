@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { slidesImages } from "../assets/assets.js";
+import banner from "../assets/banner.jpg";
 
 const BannerSlider = ({
   autoPlay = true,
@@ -62,16 +63,17 @@ const BannerSlider = ({
           {images.map((image, index) => (
             <div
               key={index}
-              className={`absolute inset-0 w-full h-full transition-opacity duration-500 ${
+              className={`absolute inset-0 w-full h-[40%] transition-opacity duration-500 ${
                 index === currentIndex
                   ? "opacity-100"
                   : "opacity-0 pointer-events-none"
               }`}
             >
               <img
-                src={
-                  typeof image === "string" ? image : image.src || image.default
-                }
+                src={banner}
+                // src={
+                //   typeof image === "string" ? image : image.src || image.default
+                // }
                 alt={`Slide ${index + 1}`}
                 className="w-full h-full object-cover"
                 style={{ transition: "opacity 500ms ease-in-out" }}
