@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { slidesImages } from "../assets/assets.js";
 import banner3 from "../assets/banner3.jpg";
+import mobileBanner from "../assets/mobileBanner.jpg";
 
 const BannerSlider = ({ autoPlay = true, interval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,7 +41,7 @@ const BannerSlider = ({ autoPlay = true, interval = 5000 }) => {
   };
 
   return (
-    <div className="relative md:w-full w-full md:h-full overflow-hidden rounded-md shadow-md">
+    <div className="relative w-full h-full overflow-hidden rounded-md shadow-md">
       <div className="absolute inset-0 w-full h-full">
         {images.map((image, index) => (
           <div
@@ -51,39 +52,44 @@ const BannerSlider = ({ autoPlay = true, interval = 5000 }) => {
                 : "opacity-0 pointer-events-none"
             }`}
           >
-            <img src={banner3} alt="" />
-            {/* {/* <img src={banner} alt="" /> */}
-            {/* <img
-              src={typeof image === "string" ? image : image.src}
-              alt={`Slide ${index + 1}`}
-              className="w-full h-full object-cover"
-            />{" "} */}
+            {/* Desktop Image (hidden on mobile) */}
+            <img
+              src={banner3}
+              alt="Desktop banner"
+              className="hidden md:block w-full h-full object-cover"
+            />
+            {/* Mobile Image (hidden on desktop) */}
+            <img
+              src={mobileBanner}
+              alt="Mobile banner"
+              className="block md:hidden w-full h-full object-cover"
+            />
           </div>
         ))}
       </div>
 
-      {/* Arrows */}
+      {/* Navigation Arrows - Hidden on mobile if you prefer */}
       <button
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors z-10"
+        className="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center transition-colors z-10"
         onClick={goToPrev}
         aria-label="Previous"
       >
         &larr;
       </button>
       <button
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors z-10"
+        className="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center transition-colors z-10"
         onClick={goToNext}
         aria-label="Next"
       >
         &rarr;
       </button>
 
-      {/* Dots */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
+      {/* Slide Indicators - Smaller on mobile */}
+      <div className="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 flex space-x-1 sm:space-x-2 z-10">
         {images.map((_, index) => (
           <button
             key={index}
-            className={`w-4 h-3 rounded-full ${
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all ${
               index === currentIndex
                 ? "bg-white"
                 : "bg-gray-200 hover:bg-white/70"
