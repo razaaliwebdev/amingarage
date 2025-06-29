@@ -45,9 +45,9 @@ export const banners = {
 };
 
 export const bannerMb = {
-    mb1,
-    mb2,
-    mb3,
-    mb4,
-    mb5
+    mb1: "https://iili.io/F5ELnna.png",
+    mb2: "https://iili.io/F5EQAfj.png",
+    mb3: "https://iili.io/F5EZ3I1.png",
+    mb4: "https://iili.io/F5EtlMg.png",
+    mb5: "https://iili.io/F5ELnna.png"
 };
