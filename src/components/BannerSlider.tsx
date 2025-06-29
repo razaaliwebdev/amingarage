@@ -63,7 +63,7 @@ const BannerSlider = ({
           {images.map((image, index) => (
             <div
               key={index}
-              className={`absolute inset-0 w-full h-[40%] transition-opacity duration-500 ${
+              className={`absolute inset-0 w-full h-[10vh] md:h-[40%] transition-opacity duration-500 ${
                 index === currentIndex
                   ? "opacity-100"
                   : "opacity-0 pointer-events-none"
