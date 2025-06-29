@@ -158,7 +158,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div key={index} className="text-center p-6">
-                <div className="text-orange-500 mb-4 flex justify-center">
+                <div className="text-red-500 mb-4 flex justify-center">
                   {value.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -198,7 +198,7 @@ const About: React.FC = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     {member.name}
                   </h3>
-                  <p className="text-orange-500 font-medium mb-2">
+                  <p className="text-red-500 font-medium mb-2">
                     {member.position}
                   </p>
                   <p className="text-gray-600">
