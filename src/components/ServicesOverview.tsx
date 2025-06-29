@@ -226,7 +226,7 @@ const ServicesOverview: React.FC = () => {
                 <div className="space-y-3 mb-8">
                   {service.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center">
-                      <div className="w-2 h-2 bg-gradient-to-r from-red-500 to-purple-600 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-gradient-to-r from-red-500 to-red-300 rounded-full mr-3"></div>
                       <span className="text-gray-700 font-medium text-sm">
                         {feature}
                       </span>
