@@ -20,7 +20,7 @@ const GalleryPreview: React.FC = () => {
       category: "Service",
     },
     {
-      src: "https://images.pexels.com/photos/5835252/pexels-photo-5835252.jpeg?auto=compress&cs=tinysrgb&w=600",
+      src: "https://images.unsplash.com/photo-1656597631672-9a3bc4d3c72f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJyYWtlJTIwcmVwYWlyJTIwc2VydmljZXxlbnwwfHwwfHx8MA%3D%3D",
       alt: "Brake repair service",
       category: "Service",
     },
