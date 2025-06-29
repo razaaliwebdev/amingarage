@@ -195,7 +195,7 @@ const Footer: React.FC = () => {
                 © {currentYear} Amin Garage. All rights reserved.
               </p>
               <p className="text-sm text-gray-400 mt-1">
-                Crafted with ❤️ for automotive excellence
+                {/* Crafted with ❤️ for automotive excellence */}
               </p>
             </div>
 

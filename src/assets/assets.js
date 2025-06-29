@@ -13,8 +13,12 @@ import banner1 from './slides/banner1.jpg';
 import banner2 from './slides/banner2.jpg';
 import banner3 from './slides/banner3.jpg';
 import banner4 from './slides/banner4.jpg';
-import banner5 from './slides/banner5.svg';
-import banner6 from './slides/banner6.svg';
+import banner5 from './slides/banner5.jpg';
+import mb1 from "./slides/mb1.jpg";
+import mb2 from "./slides/mb2.jpg";
+import mb3 from "./slides/mb3.jpg";
+import mb4 from "./slides/mb4.jpg";
+import mb5 from "./slides/mb5.jpg";
 
 
 export const images = {
@@ -32,11 +36,18 @@ export const images = {
 };
 
 
-export const slidesImages = {
+export const banners = {
     banner1,
     banner2,
     banner3,
     banner4,
-    banner5,
-    banner6
+    banner5
+};
+
+export const bannerMb = {
+    mb1,
+    mb2,
+    mb3,
+    mb4,
+    mb5
 };
