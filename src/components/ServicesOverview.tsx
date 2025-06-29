@@ -248,8 +248,8 @@ const ServicesOverview: React.FC = () => {
         </div>
 
         {/* Slider */}
-        <div className="w-full overflow-hidden shadow-lg shadow-gray-600 rounded">
-          <div className="w-full h-[4vh] md:h-[15vh]">
+        <div className="w-[100%]  overflow-hidden shadow-lg shadow-gray-600 rounded">
+          <div className="md:w-[2000px]  h-[4vh] md:h-[480px]">
             <BannerSlider />
           </div>
         </div>

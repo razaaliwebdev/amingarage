@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { slidesImages } from "../assets/assets.js";
-import banner from "../assets/banner.jpg";
+import banner3 from "../assets/banner3.jpg";
 
 const BannerSlider = ({ autoPlay = true, interval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,7 +40,7 @@ const BannerSlider = ({ autoPlay = true, interval = 5000 }) => {
   };
 
   return (
-    <div className="relative w-full h-full overflow-hidden rounded-md shadow-md">
+    <div className="relative md:w-full w-full md:h-full overflow-hidden rounded-md shadow-md">
       <div className="absolute inset-0 w-full h-full">
         {images.map((image, index) => (
           <div
@@ -51,7 +51,7 @@ const BannerSlider = ({ autoPlay = true, interval = 5000 }) => {
                 : "opacity-0 pointer-events-none"
             }`}
           >
-            <img src={banner} alt="" />
+            <img src={banner3} alt="" />
             {/* {/* <img src={banner} alt="" /> */}
             {/* <img
               src={typeof image === "string" ? image : image.src}
@@ -83,10 +83,10 @@ const BannerSlider = ({ autoPlay = true, interval = 5000 }) => {
         {images.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full ${
+            className={`w-4 h-3 rounded-full ${
               index === currentIndex
                 ? "bg-white"
-                : "bg-white/50 hover:bg-white/70"
+                : "bg-gray-200 hover:bg-white/70"
             }`}
             onClick={() => goToSlide(index)}
             aria-label={`Go to slide ${index + 1}`}
