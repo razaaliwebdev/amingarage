@@ -9,11 +9,11 @@ import danting from './danting.svg';
 import electrician from './electrician.svg';
 import paint from './paint.jpg';
 import wheel from './wheel.jpg';
-import banner1 from './slides/banner1.jpg';
-import banner2 from './slides/banner2.jpg';
-import banner3 from './slides/banner3.jpg';
-import banner4 from './slides/banner4.jpg';
-import banner5 from './slides/banner5.jpg';
+// import banner1 from './slides/banner1.jpg';
+// import banner2 from './slides/banner2.jpg';
+// import banner3 from './slides/banner3.jpg';
+// import banner4 from './slides/banner4.jpg';
+// import banner5 from './slides/banner5.jpg';
 import mb1 from "./slides/mb1.jpg";
 import mb2 from "./slides/mb2.jpg";
 import mb3 from "./slides/mb3.jpg";
@@ -37,11 +37,11 @@ export const images = {
 
 
 export const banners = {
-    banner1,
-    banner2,
-    banner3,
-    banner4,
-    banner5
+    banner1: "https://iili.io/F5EEUyF.png",
+    banner2: "https://iili.io/F5EWKap.png",
+    banner3: "https://iili.io/F5EXzOP.png",
+    banner4: "https://iili.io/F5EhoEG.png",
+    banner5: "https://iili.io/F5Ej9t9.png"
 };
 
 export const bannerMb = {

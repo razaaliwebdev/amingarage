@@ -1,5 +1,5 @@
 import React from "react";
-import { Check, Clock, DollarSign } from "lucide-react";
+import { Check, Clock } from "lucide-react";
 import { images } from "../assets/assets.js";
 
 const Services: React.FC = () => {
@@ -14,7 +14,7 @@ const Services: React.FC = () => {
         "Air filter replacement",
         "Computer diagnostics",
       ],
-      price: "Starting at ₹9,999",
+      price: "Starting at PKR 9,999",
       duration: "1–2 hours",
       image: images.mechanic,
       category: "Mechanic",
@@ -29,7 +29,7 @@ const Services: React.FC = () => {
         "Starter motor service",
         "Wiring diagnostics",
       ],
-      price: "Starting at ₹6,999",
+      price: "Starting at PKR 6,999",
       duration: "1–3 hours",
       image: images.electrician,
       category: "Electrician",
@@ -44,7 +44,7 @@ const Services: React.FC = () => {
         "Rust repair",
         "Color matching",
       ],
-      price: "Starting at ₹5,999",
+      price: "Starting at PKR 5,999",
       duration: "2–4 hours",
       image: images.danting,
       category: "Body Shop",
@@ -59,7 +59,7 @@ const Services: React.FC = () => {
         "Color change options",
         "Paint protection film",
       ],
-      price: "Starting at ₹74,999",
+      price: "Starting at PKR 74,999",
       duration: "1–2 days",
       image: images.paint,
       category: "Painting",
@@ -74,7 +74,7 @@ const Services: React.FC = () => {
         "LED lighting installation",
         "Sound system upgrades",
       ],
-      price: "Starting at ₹22,999",
+      price: "Starting at PKR 22,999",
       duration: "3–5 hours",
       image: images.bodyShop1,
       category: "Interior",
@@ -89,7 +89,7 @@ const Services: React.FC = () => {
         "Leak detection",
         "Ventilation cleaning",
       ],
-      price: "Starting at ₹8,499",
+      price: "Starting at PKR 8,499",
       duration: "1–2 hours",
       image: images.electrician,
       category: "Electrician",
@@ -104,7 +104,7 @@ const Services: React.FC = () => {
         "Decal application",
         "Clear coat protection",
       ],
-      price: "Starting at ₹59,999",
+      price: "Starting at PKR 59,999",
       duration: "3–5 days",
       image: images.paint,
       category: "Painting",
@@ -119,7 +119,7 @@ const Services: React.FC = () => {
         "Diagnostic scan",
         "Performance testing",
       ],
-      price: "Starting at ₹14,999",
+      price: "Starting at PKR 14,999",
       duration: "3–4 hours",
       image: images.mechanic1,
       category: "Mechanic",
@@ -134,7 +134,7 @@ const Services: React.FC = () => {
         "Suspension check",
         "Tire inspection",
       ],
-      price: "Starting at ₹3,999",
+      price: "Starting at PKR 3,999",
       duration: "1 hour",
       image: images.wheel,
       category: "Mechanic",
@@ -148,7 +148,7 @@ const Services: React.FC = () => {
         "Pipe welding",
         "Emission testing",
       ],
-      price: "Starting at ₹7,999",
+      price: "Starting at PKR 7,999",
       duration: "2–3 hours",
       image: images.mechanic,
       category: "Mechanic",
@@ -163,7 +163,7 @@ const Services: React.FC = () => {
         "Heat reduction",
         "Lifetime warranty",
       ],
-      price: "Starting at ₹12,999",
+      price: "Starting at PKR 12,999",
       duration: "2–3 hours",
       image: images.bodyShop,
       category: "Body Shop",
@@ -261,7 +261,6 @@ const Services: React.FC = () => {
 
                     <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                       <div className="flex items-center text-sm text-gray-600">
-                        <DollarSign className="w-4 h-4 mr-1" />
                         <span className="font-semibold text-green-600">
                           {service.price}
                         </span>
