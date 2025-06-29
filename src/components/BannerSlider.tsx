@@ -1,124 +1,119 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import { slidesImages } from "../assets/assets.js";
 
-const BannerSlider = ({ slides }) => {
-  const [index, setIndex] = useState(1); // start at the real first slide (not clone)
-  const [transition, setTransition] = useState(true);
-  const slideRef = useRef(null);
+const BannerSlider = ({
+  autoPlay = true,
+  interval = 5000,
+  aspectRatio = "16/9",
+}) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
-  // Clone last and first slides
-  const extendedSlides = [slides[slides.length - 1], ...slides, slides[0]];
+  // Convert slidesImages object to array
+  const images = Object.values(slidesImages);
 
-  // Slide change logic
+  // Calculate padding-bottom based on aspect ratio
+  const aspectRatioParts = aspectRatio.split("/");
+  const aspectRatioPercent = (aspectRatioParts[1] / aspectRatioParts[0]) * 100;
+
+  // Auto-advance slides if autoPlay is enabled
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => prev + 1);
-    }, 4000);
+    if (!autoPlay || isTransitioning) return;
 
-    return () => clearInterval(interval);
-  }, []);
+    const timer = setInterval(() => {
+      goToNext();
+    }, interval);
 
-  // Smooth transition loop reset
-  useEffect(() => {
-    if (index === extendedSlides.length - 1) {
-      setTimeout(() => {
-        setTransition(false);
-        setIndex(1); // jump back to real first
-      }, 700); // match with transition duration
-    }
+    return () => clearInterval(timer);
+  }, [currentIndex, autoPlay, interval, isTransitioning]);
 
-    if (index === 0) {
-      setTimeout(() => {
-        setTransition(false);
-        setIndex(extendedSlides.length - 2); // jump to real last
-      }, 700);
-    }
-  }, [index, extendedSlides.length]);
+  const goToNext = () => {
+    setIsTransitioning(true);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+    setTimeout(() => setIsTransitioning(false), 500);
+  };
 
-  // Reset transition state after jump
-  useEffect(() => {
-    if (!transition) {
-      const timeout = setTimeout(() => {
-        setTransition(true);
-      }, 500);
-      return () => clearTimeout(timeout);
-    }
-  }, [transition]);
+  const goToPrev = () => {
+    setIsTransitioning(true);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+    setTimeout(() => setIsTransitioning(false), 500);
+  };
 
-  // Manual controls
-  const goTo = (i) => {
-    setIndex(i + 1); // skip the first clone
+  const goToSlide = (index) => {
+    if (index === currentIndex) return;
+    setIsTransitioning(true);
+    setCurrentIndex(index);
+    setTimeout(() => setIsTransitioning(false), 500);
   };
 
   return (
-    <div className="relative w-full h-full overflow-hidden">
+    <div className="relative w-full overflow-hidden rounded-lg shadow-xl">
+      {/* Aspect ratio container */}
       <div
-        ref={slideRef}
-        className={`flex w-full h-full transition-transform duration-700 ease-in-out ${
-          transition ? "" : "transition-none"
-        }`}
-        style={{
-          transform: `translateX(-${index * 100}%)`,
-          width: `${extendedSlides.length * 100}%`,
-        }}
+        className="relative w-full"
+        style={{ paddingBottom: `${aspectRatioPercent}%` }}
       >
-        {extendedSlides.map((slide, i) => (
-          <div key={i} className="w-full flex-shrink-0 relative rounded">
-            <img
-              src={slide.imageUrl}
-              alt={slide.title}
-              className="w-full h-50 object-cover"
-            />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6 text-center">
-              <h2 className="text-3xl font-bold mb-2">{slide.title}</h2>
-              <p className="text-lg">{slide.description}</p>
+        {/* Slides container */}
+        <div className="absolute inset-0">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 w-full h-full transition-opacity duration-500 ${
+                index === currentIndex
+                  ? "opacity-100"
+                  : "opacity-0 pointer-events-none"
+              }`}
+            >
+              <img
+                src={
+                  typeof image === "string" ? image : image.src || image.default
+                }
+                alt={`Slide ${index + 1}`}
+                className="w-full h-full object-cover"
+                style={{ transition: "opacity 500ms ease-in-out" }}
+              />
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      {/* Indicators */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => goTo(i)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              i === (index - 1 + slides.length) % slides.length
-                ? "bg-white w-6"
-                : "bg-white bg-opacity-50"
-            }`}
-          />
-        ))}
+        {/* Navigation arrows */}
+        <button
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors z-10"
+          onClick={goToPrev}
+          aria-label="Previous slide"
+        >
+          &larr;
+        </button>
+        <button
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors z-10"
+          onClick={goToNext}
+          aria-label="Next slide"
+        >
+          &rarr;
+        </button>
+
+        {/* Slide indicators */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              className={`w-3 h-3 rounded-full transition-colors ${
+                index === currentIndex
+                  ? "bg-white"
+                  : "bg-white/50 hover:bg-white/70"
+              }`}
+              onClick={() => goToSlide(index)}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
-};
-
-// Default slides
-BannerSlider.defaultProps = {
-  slides: [
-    {
-      id: 1,
-      imageUrl:
-        "https://images.unsplash.com/photo-1551522435-a13afa10f103?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwZ2FyYWdlfGVufDB8fDB8fHww",
-      title: "Premium Services",
-      description: "Experience our top-tier automotive services",
-    },
-    {
-      id: 2,
-      imageUrl:
-        "https://images.unsplash.com/photo-1599256630445-67b5772b1204?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhciUyMGdhcmFnZXxlbnwwfHwwfHx8MA%3D%3D",
-      title: "Expert Technicians",
-      description: "Our certified mechanics ensure quality work",
-    },
-    {
-      id: 3,
-      imageUrl:
-        "https://images.unsplash.com/photo-1638904467737-e7e19199081d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNhciUyMGdhcmFnZXxlbnwwfHwwfHx8MA%3D%3D",
-      title: "Modern Facility",
-      description: "State-of-the-art equipment for all your needs",
-    },
-  ],
 };
 
 export default BannerSlider;

@@ -21,7 +21,7 @@ const Gallery: React.FC = () => {
       category: "Services",
     },
     {
-      src: "https://images.pexels.com/photos/5835252/pexels-photo-5835252.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://images.unsplash.com/photo-1656232976683-7b688560e427?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QnJha2UlMjByZXBhaXIlMjBzZXJ2aWNlfGVufDB8fDB8fHww",
       alt: "Brake repair service",
       category: "Services",
     },
@@ -46,7 +46,7 @@ const Gallery: React.FC = () => {
       category: "Facility",
     },
     {
-      src: "https://images.pexels.com/photos/4489695/pexels-photo-4489695.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://images.unsplash.com/photo-1636761358770-009ce3957519?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEF1dG8lMjByZXBhaXIlMjB0b29sc3xlbnwwfHwwfHx8MA%3D%3D",
       alt: "Auto repair tools",
       category: "Equipment",
     },

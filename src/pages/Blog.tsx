@@ -19,7 +19,7 @@ const Blog: React.FC = () => {
       excerpt:
         "Learn to recognize the warning signs that indicate your brake system needs professional inspection and repair.",
       image:
-        "https://images.pexels.com/photos/5835252/pexels-photo-5835252.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.unsplash.com/photo-1681249537147-802e67912982?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFNpZ25zJTIwWW91ciUyMEJyYWtlcyUyME5lZWQlMjBJbW1lZGlhdGUlMjBBdHRlbnRpb258ZW58MHx8MHx8fDA%3D",
       date: "March 10, 2024",
       author: "Maria Garcia",
       category: "Safety",
