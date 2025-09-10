@@ -284,7 +284,7 @@ const Services: React.FC = () => {
           <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-xl mb-8 text-red-100">
             Get in touch with us today to have your service appointment or a
-            free quote designed to meet your automotive requirements.
+            free quote designed to meet your automotive requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
