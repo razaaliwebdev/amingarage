@@ -37,19 +37,19 @@ const About: React.FC = () => {
       icon: <Award className="w-8 h-8" />,
       title: "Quality Work",
       description:
-        "We take pride in delivering exceptional workmanship and using only the highest quality parts.",
+        "Quality Work – We are committed to delivering superior craftsmanship and take pride in using only the highest-quality parts to ensure lasting performance",
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "Honest Service",
       description:
-        "Transparency and honesty in all our interactions. No hidden fees, no unnecessary work.",
+        "Honest Service-We hold that we are fully transparent and honest in all interactions. There are no fees, no extra work, no fine print, and nothing unnecessary: it is a simple service you can rely on.",
     },
     {
       icon: <Wrench className="w-8 h-8" />,
       title: "Expert Technicians",
       description:
-        "Our certified technicians undergo continuous training to stay current with latest technology.",
+        "Our certified technicians are undergoing constant training in order to stay on the curve; they are learning the newest automotive technologies and ways of repairing them.",
     },
   ];
 
@@ -62,8 +62,9 @@ const About: React.FC = () => {
             About Amin Garage
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-red-100">
-            Your trusted automotive partner for over 15 years, committed to
-            keeping your vehicle running safely and efficiently.
+            Proudly serving drivers for 15+ years, we are your dependable
+            auto-motive partner dedicated to keeping every journey safe, smooth,
+            and worry-free.
           </p>
         </div>
       </section>
@@ -77,23 +78,19 @@ const About: React.FC = () => {
                 Our Story
               </h2>
               <div className="space-y-4 text-lg text-gray-600">
-                <p>
-                  Founded in 2008 by automotive enthusiast John Smith, Prime
-                  Garage began as a small family-owned shop with a simple
-                  mission: provide honest, reliable automotive services to our
-                  community.
-                </p>
-                <p>
-                  Over the years, we've grown from a one-bay operation to a
-                  full-service automotive center, but our core values remain
-                  unchanged. We believe in treating every customer like family
-                  and every vehicle with the care it deserves.
-                </p>
-                <p>
-                  Today, our team of certified technicians serves hundreds of
-                  satisfied customers each month, handling everything from
-                  routine maintenance to complex repairs with the same attention
-                  to detail and commitment to quality.
+                <p className="">
+                  Established in 2025 by automotive enthusiast Adnan Amin, Amin
+                  Garage began as a family-driven workshop with a clear
+                  vision—to de-liver honest, dependable automotive care to the
+                  community. What started as a modest one-bay shop has evolved
+                  into a full-service automotive center, yet our values of
+                  integrity, trust, and customer-first ser-vice remain at the
+                  heart of everything we do. We pride ourselves on treating
+                  every client like family and every vehicle with meticulous
+                  care. Today, our team of certified technicians proudly serves
+                  hundreds of customers each month, managing everything from
+                  routine maintenance to advanced repairs with precision,
+                  dedication, and unmatched quality.
                 </p>
               </div>
             </div>
@@ -123,9 +120,9 @@ const About: React.FC = () => {
                 Our Mission
               </h3>
               <p className="text-lg text-gray-600">
-                To provide exceptional automotive services that ensure our
-                customers' safety and satisfaction while building long-lasting
-                relationships based on trust, transparency, and superior
+                To deliver exceptional automotive services that priori-tize
+                customer safety and satisfaction, while fostering lasting
+                relation-ships built on trust, transparency, and uncompromising
                 workmanship.
               </p>
             </div>
@@ -134,9 +131,10 @@ const About: React.FC = () => {
                 Our Vision
               </h3>
               <p className="text-lg text-gray-600">
-                To be the most trusted automotive service center in our
-                community, known for our expertise, integrity, and commitment to
-                keeping our customers safely on the road.
+                To become the most trusted automotive service centre in our
+                community, recognized for our expertise, integrity, and
+                unwaver-ing commitment to keeping every customer safe on the
+                road.
               </p>
             </div>
           </div>
@@ -151,8 +149,9 @@ const About: React.FC = () => {
               Our Values
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These core values guide everything we do and shape how we serve
-              our customers.
+              Our Values—Customer First. Every choice we make is guided by a
+              single priority: delivering the best possible experience for every
+              customer, every time.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -179,8 +178,10 @@ const About: React.FC = () => {
               Meet Our Team
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our experienced and certified technicians are passionate about
-              providing the best automotive service possible.
+              Our certified and highly experienced technicians are obsessed with
+              providing the best automotive care; they can blend skills,
+              commitment and knowledge to ensure your vehicle is in its best
+              condition.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
