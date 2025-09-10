@@ -60,8 +60,11 @@ const GalleryPreview: React.FC = () => {
             </span>
           </h2>
           <p className="text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Step inside our state-of-the-art facility and witness the precision,
-            expertise, and dedication that goes into every service we provide.
+            Enter the best car workshop and experience a world of precision,
+            expertise, and commitment woven into every detail of our craft. From
+            routine care to advanced car maintenance and engine repair services,
+            our facility reflects innovation, trust, and unmatched dedication to
+            keeping your vehicle at its peak.
           </p>
         </div>
 
@@ -132,8 +135,11 @@ const GalleryPreview: React.FC = () => {
                 </span>
               </h3>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Explore our complete gallery showcasing years of automotive
-                excellence and customer satisfaction.
+                Browse our gallery that reflects years of automotive excellence
+                and trusted care. From precise engine diagnostic solutions to
+                advanced transmission repair, along with reliable oil change
+                service and expert brake repair, every image tells the story of
+                quality and customer satisfaction.
               </p>
               <Link
                 to="/gallery"
