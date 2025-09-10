@@ -139,7 +139,7 @@ const GalleryPreview: React.FC = () => {
                 and trusted care. From precise engine diagnostic solutions to
                 advanced transmission repair, along with reliable oil change
                 service and expert brake repair, every image tells the story of
-                quality and customer satisfaction.
+                quality and customer satisfaction.
               </p>
               <Link
                 to="/gallery"

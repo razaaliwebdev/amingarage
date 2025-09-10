@@ -8,7 +8,7 @@ const Testimonials: React.FC = () => {
       position: "Business Owner",
       rating: 5,
       comment:
-        "Absolutely exceptional service! The team at Prime Garage went above and beyond to fix my transmission issue. Their expertise and honest pricing make them my go-to automotive service center.",
+        "Outstanding experience from start to finish! The professionals at Amin Garage exceeded expectations in resolving my transmission problem. Their unmatched expertise, transparency, and fair pricing have made them my trusted choice for every automotive need.",
       image:
         "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150",
       service: "Transmission Repair",
@@ -19,7 +19,7 @@ const Testimonials: React.FC = () => {
       position: "Fleet Manager",
       rating: 5,
       comment:
-        "I've been bringing our company vehicles here for over 3 years. Consistently reliable, professional, and they always deliver on time. The quality of work is outstanding!",
+        "For more than three years, I’ve entrusted our company fleet to Amin Garage, and they never disappoint. Always dependable, highly professional, and committed to timely delivery, their workmanship stands out for its exceptional quality.",
       image:
         "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150",
       service: "Fleet Maintenance",
@@ -30,7 +30,7 @@ const Testimonials: React.FC = () => {
       position: "Marketing Director",
       rating: 5,
       comment:
-        "Prime Garage saved me thousands! They diagnosed my engine issue accurately and provided a cost-effective solution. Their transparency and expertise are unmatched.",
+        "Amin Garage helped me avoid unnecessary expenses by pinpointing my engine problem with precision and delivering an affordable solution. Their honesty, skill, and unmatched expertise make them truly stand out in the industry.",
       image:
         "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150",
       service: "Engine Diagnostics",
@@ -59,8 +59,9 @@ const Testimonials: React.FC = () => {
             <span className="text-gray-800">Say About Us</span>
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our satisfied customers
-            have to say about their experience with Prime Garage.
+            Hear from Our Customers Beyond promises, it’s real experiences that
+            define us. Discover how drivers trust Amin Garage through the words
+            of our delightedcustomers.
           </p>
         </div>
 
