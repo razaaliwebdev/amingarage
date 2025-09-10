@@ -171,9 +171,13 @@ const ServicesOverview: React.FC = () => {
             <span className="text-black">Services</span>
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            From routine maintenance to complex repairs, we provide
-            comprehensive automotive services with cutting-edge technology and
-            expert craftsmanship.
+            From routine checkups to advanced repairs, our car repair workshop
+            offers complete automotive care with state-of-the-art technology and
+            skilled expertise. Recognized as a trusted auto repair shop, we
+            combine precision and innovation to keep every vehicle performing at
+            its best. So, when you search for an auto garage near me, you’ll
+            find a partner dedicated to delivering unmatched quality and
+            reliability.
           </p>
         </div>
 
