@@ -42,10 +42,11 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-8 text-lg leading-relaxed max-w-md">
-              Your trusted automotive service center providing premium quality
-              repairs and maintenance for over 15 years. We keep your vehicle
-              running at its absolute best with cutting-edge technology and
-              expert craftsmanship.
+              Premium Auto Care For over 15 years, we've been the trusted name
+              in automotive care, delivering top-tier repairs and maintenance
+              you can rely on. With advanced technology and masterful
+              craftsmanship, we ensure your vehicle performs at its peak every
+              mile of the journey.
             </p>
 
             {/* Awards & Certifications */}
