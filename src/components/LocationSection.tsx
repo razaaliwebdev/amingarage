@@ -31,8 +31,9 @@ const LocationSection: React.FC = () => {
             <span className="text-gray-800">Location</span>
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Conveniently located in the heart of downtown with easy access,
-            ample parking, and a comfortable waiting area for your convenience.
+            Experience our Premium Facility – ideally situated in the heart of
+            downtown for effortless access, complete with a modern lounge and
+            comfortable waiting area designed for your convenience.
           </p>
         </div>
 
@@ -184,9 +185,10 @@ const LocationSection: React.FC = () => {
                   <h3 className="text-2xl font-bold">24/7 Emergency Service</h3>
                 </div>
                 <p className="text-red-100 mb-6 text-lg">
-                  Vehicle breakdown? Don't worry! Our emergency roadside
-                  assistance team is available around the clock to help you get
-                  back on the road.
+                  24/7 Roadside Assistance – Stuck with a vehicle breakdown? No
+                  need to stress. Our dedicated emergency team is on call day
+                  and night, ready to get you back on the road quickly and
+                  safely.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
