@@ -57,8 +57,8 @@ const Contact: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-red-100">
-            Get in touch with our team for service appointments, quotes, or any
-            questions about your vehicle.
+            Connect with our team: Set up service appointments, request a quote
+            or have your questions answered about your vehicle.
           </p>
         </div>
       </section>
@@ -74,8 +74,9 @@ const Contact: React.FC = () => {
                   Get in Touch
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Ready to schedule service or have questions? We're here to
-                  help! Contact us using any of the methods below.
+                  You are ready to book a service, or you simply have questions,
+                  our team is available to help you. Contact us by using any of
+                  the convenient options listed below.
                 </p>
               </div>
 
