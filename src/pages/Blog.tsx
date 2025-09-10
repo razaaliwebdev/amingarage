@@ -88,8 +88,10 @@ const Blog: React.FC = () => {
             Automotive Blog
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-red-100">
-            Stay informed with expert tips, maintenance advice, and the latest
-            automotive insights from our experienced technicians.
+            Find out the tips of the trade, the practical side of maintenance,
+            and the newest industry news, all of which our knowledgeable
+            technicians will share with you to keep you informed and your car
+            running at its best.
           </p>
         </div>
       </section>
@@ -175,8 +177,9 @@ const Blog: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Stay Updated</h2>
           <p className="text-xl mb-8 text-red-100">
-            Subscribe to our newsletter for the latest automotive tips,
-            maintenance advice, and special offers.
+            Subscribe to our newsletter and get the most current automotive
+            tips, professional maintenance advice and special offers sent
+            directly to your mailbox!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <input
