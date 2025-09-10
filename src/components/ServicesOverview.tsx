@@ -30,7 +30,7 @@ const ServicesOverview: React.FC = () => {
         "Quick 30-Min Service",
       ],
       price: "From PKR 2,999",
-      image: images.mechanic,
+      image: images.mech,
       delay: "0",
     },
     {

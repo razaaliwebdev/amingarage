@@ -16,7 +16,7 @@ const Services: React.FC = () => {
       ],
       price: "Starting at PKR 9,999",
       duration: "1–2 hours",
-      image: images.mechanic,
+      image: images.mech,
       category: "Mechanic",
     },
     {

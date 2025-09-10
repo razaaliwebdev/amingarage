@@ -31,13 +31,14 @@ const Hero = () => {
           <div className="w-full md:w-1/2 mt-24 flex items-center justify-center px-4 sm:px-6 md:px-12">
             <div className="space-y-3 sm:space-y-4 md:space-y-5 max-w-lg">
               <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-[#C0C0C0] leading-snug sm:leading-tight">
-                <span className="audioWide">AMIN</span> AUTO CARE <br /> YOU CAN
-                TRUST
+                <span className="audioWide">AMIN</span> AUTO CARE <br /> Driven
+                by Trust, Powered by Excellence
               </h1>
               <p className="text-sm xs:text-base sm:text-lg md:text-xl text-[#C0C0C0]">
-                Experienced & certified specialists. 15+ years of excellence in
-                car repair, diagnostics, and maintenance. We care for your car
-                like it's our own.
+                Skilled and Certified Experts Over 15 years of mastery in car
+                repair, diagnostics, and maintenance. At Amin Auto Care, we
+                treat every vehicle with the same dedication and precision as
+                our own.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
                 <button

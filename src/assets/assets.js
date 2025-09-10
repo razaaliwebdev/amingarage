@@ -20,6 +20,8 @@ import wheel from './wheel.jpg';
 // import mb4 from "./slides/mb4.jpg";
 // import mb5 from "./slides/mb5.jpg";
 
+import mech from './mech.jpg';
+
 
 export const images = {
     logo,
@@ -32,7 +34,8 @@ export const images = {
     danting,
     electrician,
     paint,
-    wheel
+    wheel,
+    mech
 };
 
 
