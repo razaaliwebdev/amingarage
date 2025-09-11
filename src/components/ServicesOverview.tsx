@@ -37,11 +37,12 @@ const ServicesOverview: React.FC = () => {
       icon: <Car className="w-10 h-10" />,
       title: "Brake Repair & Service",
       description:
-        "Complete brake system service with premium parts and guaranteed safety.",
+        "Full brake system service using quality parts and professional attention, and guaranteed safety and stopping power each time.",
       features: [
         "Premium Brake Pads",
         "Rotor Resurfacing",
         "Safety Guaranteed",
+        "Break Shoe Replacement",
       ],
       price: "From PKR 11,499",
       image: images.mechanic1,
@@ -79,11 +80,11 @@ const ServicesOverview: React.FC = () => {
       icon: <Snowflake className="w-10 h-10" />,
       title: "Body Shop",
       description:
-        "Complete air conditioning system service for optimal comfort.",
+        "Complete body shop capabilities that provide quality repairs, impeccable finishes, and expert restorations to get your car back to its best.",
       features: [
-        "System Inspection",
-        "Refrigerant Service",
-        "Performance Testing",
+        "Full Body Painting",
+        "Interior Painting",
+        "Smart Repairing & Painting",
       ],
       price: "From PKR 6,799",
       image: images.bodyShop,
@@ -102,7 +103,8 @@ const ServicesOverview: React.FC = () => {
     {
       icon: <Battery className="w-10 h-10" />,
       title: "Battery Replacement",
-      description: "Professional battery testing and replacement services.",
+      description:
+        "Professionally tested battery testing and replacement services to guarantee reliable startups, steady power, and worry-free driving each and every time.",
       features: [
         "Free Battery Testing",
         "Premium Batteries",
@@ -138,13 +140,14 @@ const ServicesOverview: React.FC = () => {
     {
       icon: <Shield className="w-10 h-10" />,
       title: "Suspension Service",
-      description: "Complete suspension inspection and repair services.",
+      description:
+        "End-to-end suspension checking and repairing to increase stability and comfort and maintain your ride smooth and secure.",
       features: [
         "Shock/Strut Replacement",
         "Alignment Check",
         "Steering System",
       ],
-      price: "From PKR 11,999",
+      price: "Comming Soon",
       image: images.mechanic1,
       delay: "900",
     },

@@ -7,7 +7,7 @@ const Services: React.FC = () => {
     {
       title: "Engine Maintenance",
       description:
-        "Complete engine inspection and performance optimization to keep your vehicle running at peak efficiency.",
+        "Complete engine service and accurate performance fine-tuning to ensure your vehicle is running well, reliably, and at its best capacity.",
       features: [
         "Spark plug replacement",
         "Fuel system cleaning",
@@ -22,7 +22,7 @@ const Services: React.FC = () => {
     {
       title: "Electrical System Repair",
       description:
-        "Diagnosis and repair of all electrical components including wiring, alternators, and starters.",
+        "Professional diagnosis and replacement of all elements of the electrical system to guarantee perfect operation, high-quality functionality, and total driving confidence.",
       features: [
         "Battery testing & replacement",
         "Alternator repair",
@@ -37,12 +37,12 @@ const Services: React.FC = () => {
     {
       title: "Dent Removal & Repair",
       description:
-        "Professional dent removal and body repair services to restore your vehicle's appearance.",
+        "Professional dent removal and body repair work to fix your vehicle to its perfect look so that it appears just like new.",
       features: [
         "Paintless dent removal",
         "Body panel straightening",
         "Rust repair",
-        "Color matching",
+        "Modifications",
       ],
       price: "Starting at PKR 5,999",
       duration: "2–4 hours",
@@ -50,14 +50,15 @@ const Services: React.FC = () => {
       category: "Body Shop",
     },
     {
-      title: "Car Wrapping",
+      title: "Car Polish",
       description:
-        "Transform your vehicle's appearance with our premium vinyl wrapping services.",
+        "Bring back the brilliance of your ride with premium car polish designed for long-lasting gloss and protection.",
       features: [
-        "Full vehicle wraps",
-        "Partial wraps",
-        "Color change options",
-        "Paint protection film",
+        "Deep Cleaning",
+        "Body Polish",
+        "Interior Clieaning",
+        "Paint Protection",
+        "Full Car Polish",
       ],
       price: "Starting at PKR 74,999",
       duration: "1–2 days",
@@ -67,7 +68,7 @@ const Services: React.FC = () => {
     {
       title: "body Shop",
       description:
-        "Enhance your vehicle's interior with our premium customization services.",
+        "Complete body shop capabilities that provide quality repairs, impeccable finishes, and expert restorations to get your car back to its best.",
       features: [
         "Seat upholstery",
         "Dashboard customization",
@@ -82,14 +83,15 @@ const Services: React.FC = () => {
     {
       title: "AC System Service",
       description:
-        "Professional air conditioning system service and repair to keep you cool.",
+        "Professional air conditioning service and repair to make your vehicle cool, comfortable, and doing its best.",
       features: [
         "Refrigerant recharge",
         "Compressor service",
         "Leak detection",
         "Ventilation cleaning",
+        "Gas Refill & Repairing",
       ],
-      price: "Starting at PKR 8,499",
+      price: "Comming Soon  ",
       duration: "1–2 hours",
       image: images.electrician,
       category: "Electrician",
@@ -112,7 +114,7 @@ const Services: React.FC = () => {
     {
       title: "Transmission Service",
       description:
-        "Complete transmission inspection, fluid change, and adjustment services.",
+        "High-quality transmission service providing expert assistance to provide a seamless change, good functioning, and extended durability.",
       features: [
         "Transmission fluid change",
         "Filter replacement",
@@ -127,21 +129,22 @@ const Services: React.FC = () => {
     {
       title: "Wheel Alignment",
       description:
-        "Precision wheel alignment to ensure proper handling and tire wear.",
+        "Professional wheel adjustment services that provide accurate handling, better safety, and even tire wear for a smoother ride.",
       features: [
         "Four-wheel alignment",
         "Steering adjustment",
         "Suspension check",
         "Tire inspection",
       ],
-      price: "Starting at PKR 3,999",
+      price: "Comming Soon",
       duration: "1 hour",
       image: images.wheel,
       category: "Mechanic",
     },
     {
       title: "Exhaust System Repair",
-      description: "Complete exhaust system inspection and repair services.",
+      description:
+        "Complete exhaust system checks and repairs are needed to give your vehicle the best possible performance, better efficiency, and less emission.",
       features: [
         "Muffler replacement",
         "Catalytic converter service",
@@ -175,8 +178,8 @@ const Services: React.FC = () => {
     "Mechanic",
     "Electrician",
     "Body Shop",
-    "Painting",
-    "Interior",
+    "Spare Parts & Body Parts",
+    "Polish",
   ];
   const [activeCategory, setActiveCategory] = React.useState("All");
 
