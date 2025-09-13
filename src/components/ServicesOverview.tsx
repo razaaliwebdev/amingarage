@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { images } from "../assets/assets.js";
+import { images, servicesImages } from "../assets/assets.js";
 import {
   Wrench,
   Settings,
@@ -45,12 +45,12 @@ const ServicesOverview: React.FC = () => {
         "Break Shoe Replacement",
       ],
       price: "From PKR 11,499",
-      image: images.mechanic1,
+      image: servicesImages.breakRepair,
       delay: "100",
     },
     {
       icon: <Wrench className="w-10 h-10" />,
-      title: "Tire Installation & Repair",
+      title: "Wheel Alignment & Balancing",
       description:
         "Professional tire services with precision mounting and balancing.",
       features: [
@@ -59,12 +59,12 @@ const ServicesOverview: React.FC = () => {
         "Road Hazard Warranty",
       ],
       price: "From PKR 1,999",
-      image: images.danting,
+      image: servicesImages.wheelAlignment,
       delay: "200",
     },
     {
       icon: <Gauge className="w-10 h-10" />,
-      title: "Engine Diagnostics",
+      title: "Auto Parts",
       description:
         "Advanced computer diagnostics to identify and resolve issues quickly.",
       features: [
@@ -73,7 +73,7 @@ const ServicesOverview: React.FC = () => {
         "Detailed Reports",
       ],
       price: "From PKR 7,499",
-      image: images.electrician,
+      image: servicesImages.autoParts,
       delay: "300",
     },
     {
@@ -97,7 +97,7 @@ const ServicesOverview: React.FC = () => {
         "Expert transmission care for smooth and reliable performance.",
       features: ["Fluid Service", "Filter Replacement", "Performance Testing"],
       price: "From PKR 13,799",
-      image: images.bodyShop1,
+      image: servicesImages.transmissionService,
       delay: "500",
     },
     {
@@ -111,7 +111,7 @@ const ServicesOverview: React.FC = () => {
         "Proper Disposal",
       ],
       price: "From PKR 9,999",
-      image: images.mechanic,
+      image: servicesImages.batteryReplacement,
       delay: "600",
     },
     {
@@ -134,7 +134,7 @@ const ServicesOverview: React.FC = () => {
       description: "Diagnosis and repair of all electrical system components.",
       features: ["Wiring Repair", "Alternator Testing", "Lighting Systems"],
       price: "From PKR 8,999",
-      image: images.electrician,
+      image: servicesImages.electricalService,
       delay: "800",
     },
     {
@@ -148,7 +148,21 @@ const ServicesOverview: React.FC = () => {
         "Steering System",
       ],
       price: "Comming Soon",
-      image: images.mechanic1,
+      image: servicesImages.suspensionSerivice,
+      delay: "900",
+    },
+    {
+      icon: <Shield className="w-10 h-10" />,
+      title: "Body Parts",
+      description:
+        "End-to-end suspension checking and repairing to increase stability and comfort and maintain your ride smooth and secure.",
+      features: [
+        "Shock/Strut Replacement",
+        "Alignment Check",
+        "Steering System",
+      ],
+      price: "Comming Soon",
+      image: servicesImages.bodyParts,
       delay: "900",
     },
   ];

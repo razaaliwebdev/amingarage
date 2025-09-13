@@ -1,6 +1,6 @@
 import React from "react";
 import { Check, Clock } from "lucide-react";
-import { images } from "../assets/assets.js";
+import { images, servicesImages } from "../assets/assets";
 
 const Services: React.FC = () => {
   const services = [
@@ -16,7 +16,7 @@ const Services: React.FC = () => {
       ],
       price: "Starting at PKR 9,999",
       duration: "1–2 hours",
-      image: images.mech,
+      image: servicesImages.engineMaintenance,
       category: "Mechanic",
     },
     {
@@ -31,7 +31,7 @@ const Services: React.FC = () => {
       ],
       price: "Starting at PKR 6,999",
       duration: "1–3 hours",
-      image: images.electrician,
+      image: servicesImages.electricalService,
       category: "Electrician",
     },
     {
@@ -46,7 +46,7 @@ const Services: React.FC = () => {
       ],
       price: "Starting at PKR 5,999",
       duration: "2–4 hours",
-      image: images.danting,
+      image: servicesImages.danting,
       category: "Body Shop",
     },
     {
@@ -62,8 +62,8 @@ const Services: React.FC = () => {
       ],
       price: "Starting at PKR 74,999",
       duration: "1–2 days",
-      image: images.paint,
-      category: "Painting",
+      image: servicesImages.carPolish,
+      category: "Polish",
     },
     {
       title: "body Shop",
@@ -77,8 +77,8 @@ const Services: React.FC = () => {
       ],
       price: "Starting at PKR 22,999",
       duration: "3–5 hours",
-      image: images.bodyShop1,
-      category: "Interior",
+      image: servicesImages.bodyShop,
+      category: "Polish",
     },
     {
       title: "AC System Service",
@@ -93,11 +93,11 @@ const Services: React.FC = () => {
       ],
       price: "Comming Soon  ",
       duration: "1–2 hours",
-      image: images.electrician,
+      image: servicesImages.acService,
       category: "Electrician",
     },
     {
-      title: "Custom Paint Jobs",
+      title: "Body Parts",
       description:
         "High-quality custom paint work to give your vehicle a unique look.",
       features: [
@@ -108,8 +108,8 @@ const Services: React.FC = () => {
       ],
       price: "Starting at PKR 59,999",
       duration: "3–5 days",
-      image: images.paint,
-      category: "Painting",
+      image: servicesImages.bodyParts,
+      category: "Spare Parts & Body Parts",
     },
     {
       title: "Transmission Service",
@@ -123,7 +123,7 @@ const Services: React.FC = () => {
       ],
       price: "Starting at PKR 14,999",
       duration: "3–4 hours",
-      image: images.mechanic1,
+      image: servicesImages.transmissionService,
       category: "Mechanic",
     },
     {
@@ -138,7 +138,7 @@ const Services: React.FC = () => {
       ],
       price: "Comming Soon",
       duration: "1 hour",
-      image: images.wheel,
+      image: servicesImages.wheelAlignment,
       category: "Mechanic",
     },
     {
@@ -153,11 +153,11 @@ const Services: React.FC = () => {
       ],
       price: "Starting at PKR 7,999",
       duration: "2–3 hours",
-      image: images.mechanic,
+      image: servicesImages.exhaustService,
       category: "Mechanic",
     },
     {
-      title: "Window Tinting",
+      title: "Auto Parts",
       description:
         "Professional window tinting services for privacy and UV protection.",
       features: [
@@ -168,8 +168,8 @@ const Services: React.FC = () => {
       ],
       price: "Starting at PKR 12,999",
       duration: "2–3 hours",
-      image: images.bodyShop,
-      category: "Body Shop",
+      image: servicesImages.autoParts,
+      category: "Spare Parts & Body Parts",
     },
   ];
 
