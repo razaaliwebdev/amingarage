@@ -1,12 +1,14 @@
 import React from "react";
 import { Calendar, User, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Blog: React.FC = () => {
   const blogPosts = [
     {
-      title: "Essential Car Maintenance Tips for Winter",
+      id: "auto-ac-service-001",
+      title: "Auto Car Air Conditioning Service: Beat the Heat with Amin Garage.",
       excerpt:
-        "Prepare your vehicle for winter weather with these essential maintenance tips that will keep you safe on the road.",
+        "Nothing is more critical than an effective car air conditioning system when the scorching summer heat hits Pakistan.",
       image:
         "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=600",
       date: "March 15, 2024",
@@ -15,9 +17,10 @@ const Blog: React.FC = () => {
       readTime: "5 min read",
     },
     {
-      title: "Signs Your Brakes Need Immediate Attention",
+      id: "car-ac-repair-matters-002",
+      title: "Why Car AC Repair Matters",
       excerpt:
-        "Learn to recognize the warning signs that indicate your brake system needs professional inspection and repair.",
+        "The AC of your car is not only a comfort, but a direct influence on the safety, health and performance.",
       image:
         "https://images.unsplash.com/photo-1681249537147-802e67912982?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFNpZ25zJTIwWW91ciUyMEJyYWtlcyUyME5lZWQlMjBJbW1lZGlhdGUlMjBBdHRlbnRpb258ZW58MHx8MHx8fDA%3D",
       date: "March 10, 2024",
@@ -26,9 +29,10 @@ const Blog: React.FC = () => {
       readTime: "4 min read",
     },
     {
-      title: "How to Choose the Right Motor Oil",
+      id: "full-vehicle-maintenance-003",
+      title: "Full Vehicle Maintenance.",
       excerpt:
-        "Understanding the different types of motor oil and how to select the best one for your vehicle's specific needs.",
+        "When it comes to Amin Garage, we do not stop at AC service. We have got it all as a complete service car workshop.",
       image:
         "https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=600",
       date: "March 5, 2024",
@@ -37,9 +41,10 @@ const Blog: React.FC = () => {
       readTime: "6 min read",
     },
     {
-      title: "The Importance of Regular Engine Diagnostics",
+      id: "skilled-workmanship-innovation-004",
+      title: "Skilled Workmanship & Innovation.",
       excerpt:
-        "Modern vehicles rely on complex computer systems. Learn why regular diagnostic checks are crucial for your car's health.",
+        "You need more than a quick fix when you get a search result of a car mechanic near me. Amin Garage has a blend of professional skills.",
       image:
         "https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=600",
       date: "February 28, 2024",
@@ -48,9 +53,10 @@ const Blog: React.FC = () => {
       readTime: "7 min read",
     },
     {
-      title: "Tire Care: Maximizing Life and Performance",
+      id: "serving-faqir-wali-beyond-005",
+      title: "Serving Faqir Wali & Beyond",
       excerpt:
-        "Proper tire maintenance can save you money and keep you safe. Here's everything you need to know about tire care.",
+        "We serve in Bahawalnagar District. Amin Garage is your partner whether you require car service in Bahawalnagar.",
       image:
         "https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg?auto=compress&cs=tinysrgb&w=600",
       date: "February 20, 2024",
@@ -59,9 +65,10 @@ const Blog: React.FC = () => {
       readTime: "5 min read",
     },
     {
-      title: "Air Conditioning Service: Beat the Heat",
+      id: "why-choose-amin-garage-006",
+      title: "Why Choose Amin Garage?",
       excerpt:
-        "Don't wait until summer to check your AC. Learn about the importance of regular air conditioning maintenance.",
+        "After more than ten years of practical work, Amin Garage has established itself as the top mechanism of cars in Faqir Wali.",
       image:
         "https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg?auto=compress&cs=tinysrgb&w=600",
       date: "February 15, 2024",
@@ -140,9 +147,11 @@ const Blog: React.FC = () => {
                 </div>
 
                 <div className="p-6">
-                  <h2 className="text-xl font-bold text-gray-900 mb-3 hover:text-red-600 transition-colors duration-200">
-                    {post.title}
-                  </h2>
+                  <Link to={`/blog/${post.id}`}>
+                    <h2 className="text-xl font-bold text-gray-900 mb-3 hover:text-red-600 transition-colors duration-200">
+                      {post.title}
+                    </h2>
+                  </Link>
                   <p className="text-gray-600 mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
@@ -160,10 +169,10 @@ const Blog: React.FC = () => {
                       <Calendar className="w-4 h-4 mr-1" />
                       <span>{post.date}</span>
                     </div>
-                    <button className="text-red-600 hover:text-red-800 font-medium flex items-center transition-colors duration-200">
+                    <Link to={`/blog/${post.id}`} className="text-red-600 hover:text-red-800 font-medium flex items-center transition-colors duration-200">
                       Read More
                       <ArrowRight className="ml-1 w-4 h-4" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>
