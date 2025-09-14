@@ -1,91 +1,16 @@
 import React from "react";
 import { Calendar, User, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { blogs } from "../assets/blogs/blogs"; // Import your actual blogs data
 
 const Blog: React.FC = () => {
-  const blogPosts = [
-    {
-      id: "auto-ac-service-001",
-      title:
-        "Auto Car Air Conditioning Service: Beat the Heat with Amin Garage.",
-      excerpt:
-        "Nothing is more critical than an effective car air conditioning system when the scorching summer heat hits Pakistan.",
-      image:
-        "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=600",
-      date: "March 15, 2024",
-      author: "John Smith",
-      category: "Maintenance",
-      readTime: "5 min read",
-    },
-    {
-      id: "car-ac-repair-matters-002",
-      title: "Why Car AC Repair Matters",
-      excerpt:
-        "The AC of your car is not only a comfort, but a direct influence on the safety, health and performance.",
-      image:
-        "https://images.unsplash.com/photo-1681249537147-802e67912982?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFNpZ25zJTIwWW91ciUyMEJyYWtlcyUyME5lZWQlMjBJbW1lZGlhdGUlMjBBdHRlbnRpb258ZW58MHx8MHx8fDA%3D",
-      date: "March 10, 2024",
-      author: "Maria Garcia",
-      category: "Safety",
-      readTime: "4 min read",
-    },
-    {
-      id: "full-vehicle-maintenance-003",
-      title: "Full Vehicle Maintenance.",
-      excerpt:
-        "When it comes to Amin Garage, we do not stop at AC service. We have got it all as a complete service car workshop.",
-      image:
-        "https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=600",
-      date: "March 5, 2024",
-      author: "David Wilson",
-      category: "Maintenance",
-      readTime: "6 min read",
-    },
-    {
-      id: "skilled-workmanship-innovation-004",
-      title: "Skilled Workmanship & Innovation.",
-      excerpt:
-        "You need more than a quick fix when you get a search result of a car mechanic near me. Amin Garage has a blend of professional skills.",
-      image:
-        "https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=600",
-      date: "February 28, 2024",
-      author: "John Smith",
-      category: "Technology",
-      readTime: "7 min read",
-    },
-    {
-      id: "serving-faqir-wali-beyond-005",
-      title: "Serving Faqir Wali & Beyond",
-      excerpt:
-        "We serve in Bahawalnagar District. Amin Garage is your partner whether you require car service in Bahawalnagar.",
-      image:
-        "https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg?auto=compress&cs=tinysrgb&w=600",
-      date: "February 20, 2024",
-      author: "Maria Garcia",
-      category: "Maintenance",
-      readTime: "5 min read",
-    },
-    {
-      id: "why-choose-amin-garage-006",
-      title: "Why Choose Amin Garage?",
-      excerpt:
-        "After more than ten years of practical work, Amin Garage has established itself as the top mechanism of cars in Faqir Wali.",
-      image:
-        "https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg?auto=compress&cs=tinysrgb&w=600",
-      date: "February 15, 2024",
-      author: "David Wilson",
-      category: "Comfort",
-      readTime: "4 min read",
-    },
-  ];
-
   const categories = ["All", "Maintenance", "Safety", "Technology", "Comfort"];
   const [activeCategory, setActiveCategory] = React.useState("All");
 
   const filteredPosts =
     activeCategory === "All"
-      ? blogPosts
-      : blogPosts.filter((post) => post.category === activeCategory);
+      ? blogs
+      : blogs.filter((post) => post.category === activeCategory);
 
   return (
     <div className="pt-24">
@@ -128,17 +53,17 @@ const Blog: React.FC = () => {
       {/* Blog Posts */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.map((post, index) => (
               <article
-                key={index}
+                key={post.id}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="relative overflow-hidden">
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-[350px] object-cover transition-transform duration-300 hover:scale-110"
+                    className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-red-600 text-[#C0C0C0] px-3 py-1 rounded-full text-sm font-medium">
@@ -148,11 +73,9 @@ const Blog: React.FC = () => {
                 </div>
 
                 <div className="p-6">
-                  <Link to={`/blog/${post.id}`}>
-                    <h2 className="text-xl font-bold text-gray-900 mb-3 hover:text-red-600 transition-colors duration-200">
-                      {post.title}
-                    </h2>
-                  </Link>
+                  <h2 className="text-xl font-bold text-gray-900 mb-3 hover:text-red-600 transition-colors duration-200">
+                    {post.title}
+                  </h2>
                   <p className="text-gray-600 mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
