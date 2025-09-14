@@ -78,7 +78,7 @@ const Services: React.FC = () => {
       price: "Starting at PKR 22,999",
       duration: "3–5 hours",
       image: servicesImages.bodyShop,
-      category: "Polish",
+      category: "Body Shop",
     },
     {
       title: "AC System Service",
@@ -170,6 +170,21 @@ const Services: React.FC = () => {
       duration: "2–3 hours",
       image: servicesImages.autoParts,
       category: "Spare Parts & Body Parts",
+    },
+    {
+      title: "Car Painting",
+      description:
+        "Complete car painting capabilities that provide quality repairs, impeccable finishes, and expert restorations to get your car back to its best.",
+      features: [
+        "Full Painting",
+        "Smart Painting",
+        "Interior Painting",
+        "Exterior Painting",
+      ],
+      price: "Starting at PKR 12,999",
+      duration: "2–3 hours",
+      image: servicesImages.carPainting,
+      category: "Body Shop",
     },
   ];
 

@@ -27,6 +27,20 @@ import autoParts from './services/autoParts.jpg';
 import carPolish from './services/carPolish.jpg';
 import bodyShop from './services/bodyShop.jpg';
 
+// Services Icons Imports
+import bodyPartsIcon from './icons/bodyPartsIcon.png';
+import carBreak from './icons/carBreak.png';
+import dentingIcon from './icons/dentingIcon.png';
+import gearIcon from './icons/gearIcon.png';
+import mechanicIcon from './icons/mechanicIcon.png';
+import electritionIcon from "./icons/electritionIcon.png";
+import overHeatIcon from './icons/overHeatIcon.png';
+import paintIcon from './icons/paintIcon.png';
+import polishIcon from './icons/polishIcon.png';
+import spareParts from './icons/spareParts.png';
+import wheelAlignmentIcon from './icons/wheelAlignmentIcon.png';
+import batteryIcon from './icons/batteryIcon.png';
+
 
 
 
@@ -49,7 +63,25 @@ export const servicesImages = {
     autoParts,
     carPolish,
     bodyShop
+};
+
+
+// Icons
+export const servicesIcons = {
+    bodyPartsIcon,
+    carBreak,
+    dentingIcon,
+    gearIcon,
+    mechanicIcon,
+    electritionIcon,
+    overHeatIcon,
+    paintIcon,
+    polishIcon,
+    spareParts,
+    wheelAlignmentIcon,
+    batteryIcon
 }
+
 
 
 export const images = {

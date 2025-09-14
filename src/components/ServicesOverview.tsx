@@ -1,26 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { images, servicesImages } from "../assets/assets.js";
-import {
-  Wrench,
-  Settings,
-  Car,
-  Gauge,
-  Snowflake,
-  ArrowRight,
-  Zap,
-  Shield,
-  Clock,
-  Battery,
-  Sparkles,
-  Plug,
-} from "lucide-react";
+import { images, servicesImages, servicesIcons } from "../assets/assets.js";
+import { ArrowRight, Shield } from "lucide-react";
 import BannerSlider from "./BannerSlider.js";
 
 const ServicesOverview: React.FC = () => {
   const services = [
     {
-      icon: <Settings className="w-10 h-10" />,
+      icon: servicesIcons.mechanicIcon,
       title: "Oil Change & Maintenance",
       description:
         "Premium oil changes and comprehensive maintenance to keep your engine running like new.",
@@ -34,7 +21,7 @@ const ServicesOverview: React.FC = () => {
       delay: "0",
     },
     {
-      icon: <Car className="w-10 h-10" />,
+      icon: servicesIcons.carBreak,
       title: "Brake Repair & Service",
       description:
         "Full brake system service using quality parts and professional attention, and guaranteed safety and stopping power each time.",
@@ -49,7 +36,7 @@ const ServicesOverview: React.FC = () => {
       delay: "100",
     },
     {
-      icon: <Wrench className="w-10 h-10" />,
+      icon: servicesIcons.wheelAlignmentIcon,
       title: "Wheel Alignment & Balancing",
       description:
         "Professional tire services with precision mounting and balancing.",
@@ -63,7 +50,7 @@ const ServicesOverview: React.FC = () => {
       delay: "200",
     },
     {
-      icon: <Gauge className="w-10 h-10" />,
+      icon: servicesIcons.spareParts,
       title: "Auto Parts",
       description:
         "Advanced computer diagnostics to identify and resolve issues quickly.",
@@ -77,7 +64,7 @@ const ServicesOverview: React.FC = () => {
       delay: "300",
     },
     {
-      icon: <Snowflake className="w-10 h-10" />,
+      icon: servicesIcons.paintIcon,
       title: "Body Shop",
       description:
         "Complete body shop capabilities that provide quality repairs, impeccable finishes, and expert restorations to get your car back to its best.",
@@ -91,7 +78,7 @@ const ServicesOverview: React.FC = () => {
       delay: "400",
     },
     {
-      icon: <Zap className="w-10 h-10" />,
+      icon: servicesIcons.gearIcon,
       title: "Transmission Service",
       description:
         "Expert transmission care for smooth and reliable performance.",
@@ -101,7 +88,7 @@ const ServicesOverview: React.FC = () => {
       delay: "500",
     },
     {
-      icon: <Battery className="w-10 h-10" />,
+      icon: servicesIcons.batteryIcon,
       title: "Battery Replacement",
       description:
         "Professionally tested battery testing and replacement services to guarantee reliable startups, steady power, and worry-free driving each and every time.",
@@ -115,7 +102,7 @@ const ServicesOverview: React.FC = () => {
       delay: "600",
     },
     {
-      icon: <Sparkles className="w-10 h-10" />,
+      icon: servicesIcons.dentingIcon,
       title: "Detailing Services",
       description:
         "Complete interior and exterior detailing to restore your vehicle's shine.",
@@ -129,7 +116,7 @@ const ServicesOverview: React.FC = () => {
       delay: "700",
     },
     {
-      icon: <Plug className="w-10 h-10" />,
+      icon: servicesIcons.electritionIcon,
       title: "Electrical System Repair",
       description: "Diagnosis and repair of all electrical system components.",
       features: ["Wiring Repair", "Alternator Testing", "Lighting Systems"],
@@ -138,7 +125,7 @@ const ServicesOverview: React.FC = () => {
       delay: "800",
     },
     {
-      icon: <Shield className="w-10 h-10" />,
+      icon: servicesIcons.wheelAlignmentIcon,
       title: "Suspension Service",
       description:
         "End-to-end suspension checking and repairing to increase stability and comfort and maintain your ride smooth and secure.",
@@ -152,7 +139,7 @@ const ServicesOverview: React.FC = () => {
       delay: "900",
     },
     {
-      icon: <Shield className="w-10 h-10" />,
+      icon: servicesIcons.bodyPartsIcon,
       title: "Body Parts",
       description:
         "End-to-end suspension checking and repairing to increase stability and comfort and maintain your ride smooth and secure.",
@@ -218,9 +205,14 @@ const ServicesOverview: React.FC = () => {
                 {/* Icon Overlay */}
                 <div className="absolute top-6 left-6">
                   <div className="bg-white/20 backdrop-blur-sm p-4 rounded-2xl border border-white/30">
-                    <div className="text-white group-hover:scale-110 transition-transform duration-300">
+                    {/* <div className="text-white group-hover:scale-110 transition-transform duration-300">
                       {service.icon}
-                    </div>
+                    </div> */}
+                    <img
+                      src={service.icon}
+                      className="md:h-14 md:w-14 h-10 w-10"
+                      alt="service icon"
+                    />
                   </div>
                 </div>
 
