@@ -130,7 +130,6 @@ export const bannerMb = {
 
 
 
-
 // import banner1 from './slides/banner1.jpg';
 // import banner2 from './slides/banner2.jpg';
 // import banner3 from './slides/banner3.jpg';

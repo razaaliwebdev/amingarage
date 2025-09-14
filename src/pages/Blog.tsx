@@ -6,7 +6,8 @@ const Blog: React.FC = () => {
   const blogPosts = [
     {
       id: "auto-ac-service-001",
-      title: "Auto Car Air Conditioning Service: Beat the Heat with Amin Garage.",
+      title:
+        "Auto Car Air Conditioning Service: Beat the Heat with Amin Garage.",
       excerpt:
         "Nothing is more critical than an effective car air conditioning system when the scorching summer heat hits Pakistan.",
       image:
@@ -127,7 +128,7 @@ const Blog: React.FC = () => {
       {/* Blog Posts */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {filteredPosts.map((post, index) => (
               <article
                 key={index}
@@ -137,7 +138,7 @@ const Blog: React.FC = () => {
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+                    className="w-full h-[350px] object-cover transition-transform duration-300 hover:scale-110"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-red-600 text-[#C0C0C0] px-3 py-1 rounded-full text-sm font-medium">
@@ -169,7 +170,10 @@ const Blog: React.FC = () => {
                       <Calendar className="w-4 h-4 mr-1" />
                       <span>{post.date}</span>
                     </div>
-                    <Link to={`/blog/${post.id}`} className="text-red-600 hover:text-red-800 font-medium flex items-center transition-colors duration-200">
+                    <Link
+                      to={`/blog/${post.id}`}
+                      className="text-red-600 hover:text-red-800 font-medium flex items-center transition-colors duration-200"
+                    >
                       Read More
                       <ArrowRight className="ml-1 w-4 h-4" />
                     </Link>
