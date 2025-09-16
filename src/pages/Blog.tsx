@@ -56,60 +56,6 @@ const Blog: React.FC = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col gap-10 flex-wrap">
-            {/* {filteredblogs.map((blog: any) => (
-              <article
-                onClick={() => navigate("/blog/" + blog.id)}
-                key={blog.id}
-                className="bg-gradient-to-br from-red-50 to-gray-100 rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-pointer"
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={blog.image}
-                    alt={blog.title}
-                    className="w-full h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/30 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-gradient-to-r from-red-600 to-red-800 text-white px-4 py-1.5 rounded-full text-sm font-semibold hover:scale-105 transition-transform duration-200">
-                      {blog.category}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="p-6 md:p-8">
-                  <h2 className="text-2xl md:text-3xl font-extrabold  transition-colors duration-200">
-                    {blog.title}
-                  </h2>
-                  <p className="text-base md:text-lg text-gray-700 mb-4 line-clamp-3 leading-relaxed">
-                    {blog.excerpt}
-                  </p>
-
-                  <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
-                    <div className="flex items-center">
-                      <User className="w-4 h-4 mr-1" />
-                      <span>{blog.author}</span>
-                    </div>
-                    <span>{blog.readTime}</span>
-                  </div>
-
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center text-sm text-gray-600">
-                      <Calendar className="w-4 h-4 mr-1" />
-                      <span>{blog.date}</span>
-                    </div>
-                    <Link
-                      to={`/blog/${blog.id}`}
-                      className="text-red-600 hover:text-red-800 font-semibold flex items-center transition-colors duration-200 relative group"
-                      aria-label={`Read more about ${blog.title}`}
-                    >
-                      Read More
-                      <ArrowRight className="ml-1 w-4 h-4" />
-                      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-red-600 to-red-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            ))} */}
             {filteredblogs.map((blog: any) => (
               <article
                 onClick={() => navigate("/blog/" + blog.id)}
