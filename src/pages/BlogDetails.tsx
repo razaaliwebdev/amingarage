@@ -7,74 +7,63 @@ export default function BlogDetails() {
 
   if (!blog) {
     return (
-      <div className="p-6">
-        <p>Blog not found.</p>
-        <Link to="/blog" className="text-red-600 underline">
+      <div className="min-h-screen flex flex-col items-center justify-center p-6">
+        <p className="text-lg mb-4">Blog post not found</p>
+        <Link to="/blog" className="text-red-600 hover:underline">
           ← Back to Blogs
         </Link>
       </div>
     );
   }
 
-  const related = blogs
-    .filter((b) => b.category === blog.category && b.id !== blog.id)
-    .slice(0, 3);
+  // Clean content by removing any duplicate h1 and featured image
+  const cleanContent = blog.content
+    .replace(/<h1[^>]*>.*<\/h1>/i, "")
+    .replace(
+      /<img[^>]*class=["'](.*?featured-image|main-image|post-thumbnail|wp-post-image)(.*?)["'][^>]*>/i,
+      ""
+    );
 
   return (
-    <div className="pt-24 max-w-4xl mx-auto px-4">
-      {/* Header Info */}
-      <div className="mb-8 text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">{blog.title}</h1>
-        <div className="flex items-center justify-center space-x-4 text-sm text-gray-500">
+    <div className="min-h-screen bg-white py-12 px-4 sm:px-6">
+      <div className="max-w-4xl mx-auto">
+        {/* Blog Title */}
+        <h1 className="text-4xl font-bold text-center mb-6">{blog.title}</h1>
+
+        {/* Meta Info */}
+        <div className="flex justify-center gap-4 text-gray-600 mb-12">
           <span>By {blog.author}</span>
-          <span>• {blog.date}</span>
-          <span>• {blog.readTime}</span>
+          <span>•</span>
+          <span>{blog.date}</span>
+          <span>•</span>
+          <span>{blog.readTime}</span>
+        </div>
+
+        {/* Featured Image */}
+        <div className="mb-12 overflow-hidden rounded-xl shadow-lg">
+          <img
+            src={blog.image}
+            alt={blog.title}
+            className="w-full h-auto max-h-[500px] object-cover"
+          />
+        </div>
+
+        {/* Blog Content */}
+        <div
+          className="prose prose-lg max-w-none mx-auto mb-12"
+          dangerouslySetInnerHTML={{ __html: cleanContent }}
+        />
+
+        {/* Back Link */}
+        <div className="text-center">
+          <Link
+            to="/blog"
+            className="inline-block text-red-600 hover:underline"
+          >
+            ← Back to Blogs
+          </Link>
         </div>
       </div>
-
-      {/* Main Image */}
-      <img
-        src={blog.image}
-        alt={blog.title}
-        className="w-full h-[400px] object-cover rounded-xl shadow-md mb-10"
-      />
-
-      {/* Blog Content */}
-      <div
-        className="prose prose-lg max-w-none space-y-6"
-        dangerouslySetInnerHTML={{ __html: blog.content }}
-      />
-
-      <Link to="/blog" className="text-red-600 underline block mt-10">
-        ← Back to Blogs
-      </Link>
-
-      {/* Related Posts */}
-      {related.length > 0 && (
-        <section className="mt-16">
-          <h2 className="text-2xl font-bold mb-6">Related Posts</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {related.map((r) => (
-              <Link
-                key={r.id}
-                to={`/blog/${r.id}`}
-                className="block bg-white rounded-lg shadow hover:shadow-md overflow-hidden"
-              >
-                <img
-                  src={r.image}
-                  alt={r.title}
-                  className="h-32 w-full object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="font-semibold text-gray-800 line-clamp-2">
-                    {r.title}
-                  </h3>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
     </div>
   );
 }
