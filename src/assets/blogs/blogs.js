@@ -7,6 +7,14 @@ import theExistingFeatureOfAutomotiveSpareParts from "./theExistingFeatureOfAuto
 import theImportanceOfRegularEngineDiagostic from "./theImportanceOfRegularEngineDiagostic.jpg";
 import whatYouNeedToConsiderWhenBuyingAutoBodyParts from "./whatYouNeedToConsiderWhenBuyingAutoBodyParts.jpg";
 import howToPaintAnOldCarOverExistingPaint from "./howToPaintAnOldCarOverExistingPaint.jpg";
+import danting from './danting.svg';
+
+
+// images
+import wheelAlignment from '../services/wheelAlignment.jpg';
+import engineMaintenance from '../services/engineMaintenance.jpg';
+import autoParts from '../services/autoParts.jpg';
+import bodyParts from '../services/bodyParts.jpg';
 
 
 
@@ -67,7 +75,7 @@ export const blogs = [
     id: "car-tire-care-maximizing-life-and-performance",
     title: "Car Tire Care: Maximizing Life and Performance",
     excerpt: "Your car’s tires are the foundation of safety, comfort, and performance on the road.",
-    image: airConditioningServiceBeatHeat,
+    image: wheelAlignment,
     author: "Amin Garage",
     date: "September 16, 2025",
     category: "Tire & Wheels",
@@ -124,7 +132,7 @@ export const blogs = [
     id: "automobile-mechanic-you-drive-the-car-but-not-the-expertise",
     title: "Automobile Mechanic: You Drive the Car but Not the Expertise",
     excerpt: "All cars that run smoothly have behind them the expertise and hard work of an Automobile Mechanic.",
-    image: airConditioningServiceBeatHeat,
+    image: engineMaintenance,
     author: "Amin Garage",
     date: "September 16, 2025",
     category: "Mechanics",
@@ -193,7 +201,7 @@ export const blogs = [
     id: "car-painting-restoring-beauty-and-value-to-your-vehicle",
     title: "Car Painting: Restoring Beauty and Value to Your Vehicle",
     excerpt: "Car Painting is an art and science that restores your vehicle’s beauty while protecting it from damage. At Amin Garage – Expert Car Repair Workshop in Faqir Wali, we blend craftsmanship and modern technology to deliver stunning results.",
-    image: airConditioningServiceBeatHeat,
+    image: howToPaintAnOldCarOverExistingPaint,
     author: "Amin Garage",
     date: "March 28, 2024",
     category: "Maintenance",
@@ -260,7 +268,7 @@ export const blogs = [
     id: "car-polishing-refining-shine-and-safeguarding-your-automobile",
     title: "Car Polishing: Refining Shine and Safeguarding Your Automobile",
     excerpt: "Car Polishing enhances appearance, rejuvenates paintwork, and protects against damage. At Amin Garage – Expert Car Repair Workshop in Faqir Wali, we provide specialized polishing services trusted across the Bahawalnagar District.",
-    image: airConditioningServiceBeatHeat,
+    image: springCarDetailingRefreshYourRideAfterAHarshWinter,
     author: "Amin Garage",
     date: "March 28, 2024",
     category: "Maintenance",
@@ -324,7 +332,7 @@ export const blogs = [
     id: "auto-denting-repairing-strength-and-beauty-to-your-car",
     title: "Auto Denting: Repairing Strength and Beauty to Your Car",
     excerpt: "Auto Denting restores your car’s strength, safety, and beauty. At Amin Garage – Expert Car Repair Workshop in Faqir Wali, we deliver precision dent removal and full-service care trusted across the Bahawalnagar District.",
-    image: airConditioningServiceBeatHeat,
+    image: danting,
     author: "Amin Garage",
     date: "April 3, 2024",
     category: "Body Care",
@@ -390,7 +398,7 @@ export const blogs = [
     id: "auto-body-parts-how-to-make-your-car-strong-safe-and-styled",
     title: "Auto Body Parts: How to Make Your Car Strong, Safe, and Styled",
     excerpt: "Auto Body Parts define your car’s strength, safety, and style. At Amin Garage – Expert Car Repair Workshop in Faqir Wali, we provide premium Car Parts and full-service repairs trusted across the Bahawalnagar District.",
-    image: airConditioningServiceBeatHeat,
+    image: bodyParts,
     author: "Amin Garage",
     date: "April 9, 2024",
     category: "Body Care",
@@ -455,7 +463,7 @@ export const blogs = [
     id: "auto-spare-parts-reliable-and-roadworthy-performance",
     title: "Auto Spare Parts: Reliable and Roadworthy Performance",
     excerpt: "Auto Spare Parts are the backbone of every vehicle. At Amin Garage – Expert Car Repair Workshop in Faqir Wali, we use only genuine Spare Parts to ensure lasting performance, safety, and reliability.",
-    image: airConditioningServiceBeatHeat,
+    image: autoParts,
     author: "Amin Garage",
     date: "April 16, 2024",
     category: "Maintenance",
