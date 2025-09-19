@@ -42,6 +42,10 @@ import wheelAlignmentIcon from './icons/wheelAlignmentIcon.png';
 import batteryIcon from './icons/batteryIcon.png';
 
 
+// Team Images
+import adnanAminOwner from './adnanAminOwner.jpg';
+import zeshaanSupervisor from './zeshaanSupervisor.jpg';
+import razaDeveloper from './razaDeveloper.webp';
 
 
 
@@ -99,6 +103,13 @@ export const images = {
     mech
 };
 
+
+// Teams Images
+export const teamImages = {
+    adnanAminOwner,
+    zeshaanSupervisor,
+    razaDeveloper
+}
 
 
 

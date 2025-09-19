@@ -1,28 +1,26 @@
 import React from "react";
 import { Users, Award, Wrench, Heart } from "lucide-react";
+import { teamImages } from "../assets/assets";
 
 const About: React.FC = () => {
   const teamMembers = [
     {
-      name: "John Smith",
-      position: "Master Technician",
+      name: "Muhammad Adnan Amin",
+      position: "Founder , CEO & Owner",
       experience: "20+ years",
-      image:
-        "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: teamImages.adnanAminOwner,
     },
     {
-      name: "Maria Garcia",
-      position: "Service Manager",
+      name: "Zeeshan maqsood",
+      position: "Supervisor & Mechanic",
       experience: "15+ years",
-      image:
-        "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: teamImages.zeshaanSupervisor,
     },
     {
-      name: "David Wilson",
-      position: "Diagnostic Specialist",
-      experience: "12+ years",
-      image:
-        "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400",
+      name: "Raza Ali",
+      position: "Software Developer",
+      experience: "1.5+ years",
+      image: teamImages.razaDeveloper,
     },
   ];
 
@@ -193,7 +191,7 @@ const About: React.FC = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-[28rem] object-cover"
                 />
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
