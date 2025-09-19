@@ -46,6 +46,7 @@ import batteryIcon from './icons/batteryIcon.png';
 import adnanAminOwner from './adnanAminOwner.jpg';
 import zeshaanSupervisor from './zeshaanSupervisor.jpg';
 import razaDeveloper from './razaDeveloper.webp';
+import sufyanAminManager from './sufyanAminManager.jpg';
 
 
 
@@ -108,8 +109,9 @@ export const images = {
 export const teamImages = {
     adnanAminOwner,
     zeshaanSupervisor,
-    razaDeveloper
-}
+    razaDeveloper,
+    sufyanAminManager
+};
 
 
 

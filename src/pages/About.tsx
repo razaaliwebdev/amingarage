@@ -17,10 +17,10 @@ const About: React.FC = () => {
       image: teamImages.zeshaanSupervisor,
     },
     {
-      name: "Raza Ali",
-      position: "Software Developer",
-      experience: "1.5+ years",
-      image: teamImages.razaDeveloper,
+      name: "Muhammad Sufyan Amin",
+      position: "Manager",
+      experience: "7+ years",
+      image: teamImages.sufyanAminManager,
     },
   ];
 
