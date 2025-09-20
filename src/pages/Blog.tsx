@@ -2,7 +2,6 @@ import React from "react";
 import { Calendar, User, ArrowRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { blogImages } from "../assets/blogs/blogs";
-// import { blogs } from "../assets/blogs/blogs"; // Import your actual blogs data
 
 const blogs = [
   {
@@ -521,15 +520,7 @@ const blogs = [
 ];
 
 const Blog: React.FC = () => {
-  const categories = ["All", "Maintenance", "Safety", "Technology", "Comfort"];
-  const [activeCategory, setActiveCategory] = React.useState("All");
-
   const navigate = useNavigate();
-
-  const filteredblogs =
-    activeCategory === "All"
-      ? blogs
-      : blogs.filter((blog) => blog.category === activeCategory);
 
   return (
     <div className="pt-24">
@@ -548,32 +539,11 @@ const Blog: React.FC = () => {
         </div>
       </section>
 
-      {/* Category Filter */}
-      <section className="py-8 text-[#C0C0C0] border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-4">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2 rounded-full font-medium transition-colors duration-200 ${
-                  activeCategory === category
-                    ? "bg-red-600 text-[#C0C0C0]"
-                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Blog posts */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col gap-10 flex-wrap">
-            {filteredblogs.map((blog: any) => (
+            {blogs.map((blog: any) => (
               <article
                 onClick={() => navigate("/blog/" + blog.id)}
                 key={blog.id}
