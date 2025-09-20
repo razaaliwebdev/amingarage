@@ -26,6 +26,7 @@ import bodyParts from './services/bodyParts.jpg';
 import autoParts from './services/autoParts.jpg';
 import carPolish from './services/carPolish.jpg';
 import bodyShop from './services/bodyShop.jpg';
+import howToChooseRightMotorOil from './blogs/howToChooseRightMotorOil.jpg';
 
 // Services Icons Imports
 import bodyPartsIcon from './icons/bodyPartsIcon.png';
@@ -112,6 +113,40 @@ export const teamImages = {
     razaDeveloper,
     sufyanAminManager
 };
+
+// Gallery Images
+export const galleryImages = [
+    {
+        src: wheelAlignment,
+        alt: "wheel alignment",
+        category: "Facility",
+    },
+    {
+        src: batteryReplacement,
+        alt: "Professional mechanics at work",
+        category: "Team",
+    },
+    {
+        src: transmissionService,
+        alt: "Transmission service",
+        category: "Service",
+    },
+    {
+        src: breakRepair,
+        alt: "Brake repair service",
+        category: "Service",
+    },
+    {
+        src: engineMaintenance,
+        alt: "Engine diagnostics",
+        category: "Technology",
+    },
+    {
+        src: howToChooseRightMotorOil,
+        alt: "Oil change service",
+        category: "Service",
+    },
+];
 
 
 

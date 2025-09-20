@@ -1,41 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Eye, Camera, Star } from "lucide-react";
+import { galleryImages } from "../assets/assets";
 
 const GalleryPreview: React.FC = () => {
-  const galleryImages = [
-    {
-      src: "https://images.pexels.com/photos/3593922/pexels-photo-3593922.jpeg?auto=compress&cs=tinysrgb&w=600",
-      alt: "Modern garage facility",
-      category: "Facility",
-    },
-    {
-      src: "https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg?auto=compress&cs=tinysrgb&w=600",
-      alt: "Professional mechanics at work",
-      category: "Team",
-    },
-    {
-      src: "https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg?auto=compress&cs=tinysrgb&w=600",
-      alt: "Tire installation service",
-      category: "Service",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1656597631672-9a3bc4d3c72f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJyYWtlJTIwcmVwYWlyJTIwc2VydmljZXxlbnwwfHwwfHx8MA%3D%3D",
-      alt: "Brake repair service",
-      category: "Service",
-    },
-    {
-      src: "https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=600",
-      alt: "Engine diagnostics",
-      category: "Technology",
-    },
-    {
-      src: "https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=600",
-      alt: "Oil change service",
-      category: "Service",
-    },
-  ];
-
   return (
     <section className="py-24 bg-black text-white relative overflow-hidden">
       {/* Animated Background Elements */}
