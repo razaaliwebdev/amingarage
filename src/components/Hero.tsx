@@ -64,26 +64,6 @@ const Hero = () => {
           <div className="w-full md:w-1/2"></div>
         </div>
       </div>
-
-      {/* Feature Stats Section */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white text-black py-8 sm:py-12 px-4 text-center">
-        <div className="p-3 sm:p-4">
-          <p className="text-2xl sm:text-3xl font-bold text-red-600">15+</p>
-          <p className="text-xs sm:text-sm font-medium">YEARS EXPERIENCE</p>
-        </div>
-        <div className="p-3 sm:p-4">
-          <p className="text-2xl sm:text-3xl font-bold text-red-600">5000+</p>
-          <p className="text-xs sm:text-sm font-medium">HAPPY CUSTOMERS</p>
-        </div>
-        <div className="p-3 sm:p-4">
-          <p className="text-2xl sm:text-3xl font-bold text-red-600">4.9</p>
-          <p className="text-xs sm:text-sm font-medium">AVERAGE RATING</p>
-        </div>
-        <div className="p-3 sm:p-4">
-          <p className="text-2xl sm:text-3xl font-bold text-red-600">24/7</p>
-          <p className="text-xs sm:text-sm font-medium">EMERGENCY SERVICE</p>
-        </div>
-      </div>
     </>
   );
 };
