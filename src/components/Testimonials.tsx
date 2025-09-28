@@ -103,6 +103,8 @@ const Testimonials: React.FC = () => {
               <div className="flex items-center relative z-10">
                 <div className="relative">
                   <img
+                    loading="lazy"
+                    fetchPriority="high"
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"

@@ -47,6 +47,8 @@ const GalleryPreview: React.FC = () => {
               {/* Image Container */}
               <div className="relative h-80 overflow-hidden">
                 <img
+                  loading="lazy"
+                  fetchPriority="high"
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"

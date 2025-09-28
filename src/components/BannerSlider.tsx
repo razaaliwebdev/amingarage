@@ -31,17 +31,23 @@ const BannerSlider = ({ autoPlay = true, interval = 1500 }) => {
           <div key={index} className="flex-shrink-0 w-full h-full">
             {/* Desktop Image */}
             <img
+              loading="lazy"
+              fetchPriority="high"
               src={desktopImages[index]}
               alt={`Slide ${index + 1}`}
               className="hidden md:block w-full h-full object-cover"
             />
             {/* <img
+            loading="lazy"
+            fetchPriority="high"
               src={banner3}
               alt=""
               className="hidden md:block w-full h-full object-cover"
             /> */}
             {/* Mobile Image */}
             <img
+              loading="lazy"
+              fetchPriority="high"
               src={mobileImages[index]}
               alt={`Slide ${index + 1}`}
               className="block md:hidden w-full h-full object-cover"

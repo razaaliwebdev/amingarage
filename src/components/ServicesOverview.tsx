@@ -196,6 +196,8 @@ const ServicesOverview: React.FC = () => {
               {/* Image Section */}
               <div className="relative h-56 overflow-hidden">
                 <img
+                  loading="lazy"
+                  fetchPriority="high"
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -209,6 +211,8 @@ const ServicesOverview: React.FC = () => {
                       {service.icon}
                     </div> */}
                     <img
+                      loading="lazy"
+                      fetchPriority="high"
                       src={service.icon}
                       className="md:h-14 md:w-14 h-10 w-10"
                       alt="service icon"

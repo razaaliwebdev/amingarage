@@ -14,6 +14,8 @@ const Hero = () => {
             src={heroImage}
             alt="Mechanic"
             className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
 
