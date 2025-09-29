@@ -1,20 +1,20 @@
-import airConditioningServiceBeatHeat from "./airConditioningServiceBeatHeat.jpg";
-import avoidCostlyMistakesHowToChooseRightCollisionRepairShopInLowCity from "./avoidCostlyMistakesHowToChooseRightCollisionRepairShopInLowCity.jpg";
-import howToChooseRightMotorOil from "./howToChooseRightMotorOil.jpg";
-import signsYourBreaksNeedImmediateAttention from "./signsYourBreaksNeedImmediateAttention.jpg";
-import springCarDetailingRefreshYourRideAfterAHarshWinter from "./springCarDetailingRefreshYourRideAfterAHarshWinter.jpg";
-import theExistingFeatureOfAutomotiveSpareParts from "./theExistingFeatureOfAutomotiveSpareParts.jpg";
-import theImportanceOfRegularEngineDiagostic from "./theImportanceOfRegularEngineDiagostic.jpg";
-import whatYouNeedToConsiderWhenBuyingAutoBodyParts from "./whatYouNeedToConsiderWhenBuyingAutoBodyParts.jpg";
-import howToPaintAnOldCarOverExistingPaint from "./howToPaintAnOldCarOverExistingPaint.jpg";
+import airConditioningServiceBeatHeat from "./airConditioningServiceBeatHeat.svg";
+import avoidCostlyMistakesHowToChooseRightCollisionRepairShopInLowCity from "./avoidCostlyMistakesHowToChooseRightCollisionRepairShopInLowCity.svg";
+import howToChooseRightMotorOil from "./howToChooseRightMotorOil.svg";
+import signsYourBreaksNeedImmediateAttention from "./signsYourBreaksNeedImmediateAttention.svg";
+import springCarDetailingRefreshYourRideAfterAHarshWinter from "./springCarDetailingRefreshYourRideAfterAHarshWinter.svg";
+import theExistingFeatureOfAutomotiveSpareParts from "./theExistingFeatureOfAutomotiveSpareParts.svg";
+import theImportanceOfRegularEngineDiagostic from "./theImportanceOfRegularEngineDiagostic.svg";
+import whatYouNeedToConsiderWhenBuyingAutoBodyParts from "./whatYouNeedToConsiderWhenBuyingAutoBodyParts.svg";
+import howToPaintAnOldCarOverExistingPaint from "./howToPaintAnOldCarOverExistingPaint.svg";
 import danting from './danting.svg';
 
 
 // images
-import wheelAlignment from '../services/wheelAlignment.jpg';
-import engineMaintenance from '../services/engineMaintenance.jpg';
-import autoParts from '../services/autoParts.jpg';
-import bodyParts from '../services/bodyParts.jpg';
+import wheelAlignment from '../services/wheelAlignment.svg';
+import engineMaintenance from '../services/engineMaintenance.svg';
+import autoParts from '../services/autoParts.svg';
+import bodyParts from '../services/bodyParts.svg';
 
 
 
