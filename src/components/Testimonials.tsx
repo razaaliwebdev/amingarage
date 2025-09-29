@@ -114,9 +114,9 @@ const Testimonials: React.FC = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-bold text-gray-900 text-lg">
+                  <h3 className="font-bold text-gray-900 text-lg">
                     {testimonial.name}
-                  </h4>
+                  </h3>
                   <p className="text-gray-600 font-medium">
                     {testimonial.position}
                   </p>
