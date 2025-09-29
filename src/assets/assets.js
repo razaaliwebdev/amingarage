@@ -1,6 +1,6 @@
-import logo from './logo.png';
+import logo from './logo.webp';
 import hero from './hero.webp';
-import whatsAppIcon from './whatsAppIcon.png';
+import whatsAppIcon from './whatsAppIcon.webp';
 
 
 // Sevices Images imports
