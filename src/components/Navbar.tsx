@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { images } from "../assets/assets.js";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FiPhone, FiMenu, FiX } from "react-icons/fi";
 
 const navLinks = [
@@ -85,10 +85,10 @@ const Navbar = () => {
 
         {/* Desktop Button */}
         <NavLink to="/contact" className="hidden md:flex">
-          <button className="text-white text-sm md:text-lg bg-red-600 px-6 py-3 rounded-md hover:bg-red-700 transition-all duration-300">
-            <a href="tel:+923076552348" className="flex items-center gap-2">
+          <button className="flex items-center gap-2 text-white text-sm md:text-lg bg-red-600 px-6 py-3 rounded-md hover:bg-red-700 transition-all duration-300">
+            <Link to="tel:+923076552348" className="flex items-center gap-2">
               <FiPhone /> <span>Get Quote</span>
-            </a>
+            </Link>
           </button>
         </NavLink>
 
@@ -152,7 +152,7 @@ const Navbar = () => {
 
             {/* Sidebar Button */}
             <NavLink to="/contact" onClick={toggleDrawer}>
-              <button className="text-white flex items-center gap-2 text-base bg-red-600 px-4 py-2 rounded-md hover:bg-red-700 transition-all duration-300 mt-6">
+              <button className="flex items-center gap-2 text-white text-base bg-red-600 px-5 py-3 rounded-md hover:bg-red-700 transition-all duration-300 mt-6">
                 <FiPhone /> <span>Get Quote</span>
               </button>
             </NavLink>
