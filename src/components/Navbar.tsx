@@ -96,6 +96,7 @@ const Navbar = () => {
         <button
           onClick={toggleDrawer}
           className="text-[#C0C0C0] text-2xl md:hidden"
+          aria-label="Open navigation menu"
         >
           {menuOpen ? <FiX /> : <FiMenu />}
         </button>
