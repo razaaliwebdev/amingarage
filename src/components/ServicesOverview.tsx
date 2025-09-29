@@ -17,7 +17,7 @@ const ServicesOverview: React.FC = () => {
         "Quick 30-Min Service",
       ],
       price: "From PKR 2,999",
-      image: images.mech,
+      image: servicesImages.engineMaintenance,
       delay: "0",
     },
     {
@@ -74,7 +74,7 @@ const ServicesOverview: React.FC = () => {
         "Smart Repairing & Painting",
       ],
       price: "From PKR 6,799",
-      image: images.bodyShop,
+      image: servicesImages.bodyShop,
       delay: "400",
     },
     {
@@ -112,7 +112,7 @@ const ServicesOverview: React.FC = () => {
         "Odor Elimination",
       ],
       price: "From PKR 14,999",
-      image: images.danting,
+      image: servicesImages.danting,
       delay: "700",
     },
     {
