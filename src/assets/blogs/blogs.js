@@ -11,10 +11,10 @@ import danting from './danting.svg';
 
 
 // images
-import wheelAlignment from '../services/wheelAlignment.svg';
-import engineMaintenance from '../services/engineMaintenance.svg';
-import autoParts from '../services/autoParts.svg';
-import bodyParts from '../services/bodyParts.svg';
+import wheelAlignment from '../services/wheelAlignment.webp';
+import engineMaintenance from '../services/engineMaintenance.webp';
+import autoParts from '../services/autoParts.webp';
+import bodyParts from '../services/bodyParts.webp';
 
 
 

@@ -11,21 +11,21 @@ import wheel from './wheel.jpg';
 import mech from './mech.jpg';
 
 // Sevices Images imports
-import danting from './danting.svg';
-import acService from './services/acService.svg';
-import wheelAlignment from './services/wheelAlignment.svg';
-import transmissionService from './services/transmissionService.svg';
-import suspensionSerivice from './services/suspensionSerivice.svg';
-import exhaustService from './services/exhaustService.svg';
-import engineMaintenance from './services/engineMaintenance.svg';
-import electricalService from './services/electricalService.svg';
-import breakRepair from './services/breakRepair.svg';
-import carPainting from './services/carPainting.svg';
-import batteryReplacement from './services/batteryReplacement.svg';
-import bodyParts from './services/bodyParts.svg';
-import autoParts from './services/autoParts.svg';
-import carPolish from './services/carPolish.svg';
-import bodyShop from './services/bodyShop.svg';
+import danting from './services/danting.webp';
+import acService from './services/acService.webp';
+import wheelAlignment from './services/wheelAlignment.webp';
+import transmissionService from './services/transmissionService.webp';
+import suspensionSerivice from './services/suspensionSerivice.webp';
+import exhaustService from './services/exhaustService.webp';
+import engineMaintenance from './services/engineMaintenance.webp';
+import electricalService from './services/electricalService.webp';
+import breakRepair from './services/breakRepair.webp';
+import carPainting from './services/carPainting.webp';
+import batteryReplacement from './services/batteryReplacement.webp';
+import bodyParts from './services/bodyParts.webp';
+import autoParts from './services/autoParts.webp';
+import carPolish from './services/carPolish.webp';
+import bodyShop from './services/bodyShop.webp';
 import howToChooseRightMotorOil from './blogs/howToChooseRightMotorOil.svg';
 
 // Services Icons Imports
