@@ -1,5 +1,5 @@
 import logo from './logo.png';
-import hero from './hero.svg';
+import hero from './hero.webp';
 import whatsAppIcon from './whatsAppIcon.png';
 import mechanic from './mechanic.svg';
 import mechanic1 from './mechanic1.svg';

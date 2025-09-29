@@ -1,5 +1,6 @@
 import React from "react";
-import heroImage from "../assets/hero.svg"; // Replace with your image
+import heroImage from "../assets/hero.webp";
+
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
