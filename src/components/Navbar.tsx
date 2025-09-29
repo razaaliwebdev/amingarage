@@ -85,7 +85,7 @@ const Navbar = () => {
 
         {/* Desktop Button */}
         <NavLink to="/contact" className="hidden md:flex">
-          <button className="text-white text-sm md:text-lg bg-red-600 px-5 py-2 rounded-md hover:bg-red-700 transition-all duration-300">
+          <button className="text-white text-sm md:text-lg bg-red-600 px-6 py-3 rounded-md hover:bg-red-700 transition-all duration-300">
             <a href="tel:+923076552348" className="flex items-center gap-2">
               <FiPhone /> <span>Get Quote</span>
             </a>
