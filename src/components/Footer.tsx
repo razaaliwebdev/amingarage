@@ -74,30 +74,35 @@ const Footer: React.FC = () => {
             {/* Enhanced Social Links */}
             <div className="flex space-x-4">
               <Link
+                aria-label="Follow us on Facebook"
                 to="https://web.facebook.com/profile.php?id=61578059121001"
                 className="group bg-white/10 hover:bg-blue-600 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Facebook className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </Link>
               <Link
+                aria-label="Follow us on Instagram"
                 to="https://www.instagram.com/amingarages"
                 className="group bg-white/10 hover:bg-pink-600 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </Link>
               <Link
+                aria-label="Follow us on Twitter"
                 to="https://x.com/amingarage96"
                 className="group bg-white/10 hover:bg-blue-400 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Twitter className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </Link>
               <Link
+                aria-label="Subscribe to our YouTube channel"
                 to="https://www.youtube.com/@AminGarage-n6b"
                 className="group bg-white/10 hover:bg-red-600 p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Youtube className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </Link>
               <Link
+                aria-label="Follow us on TikTok"
                 to="https://www.tiktok.com/@amingarage96?lang=en-GB"
                 className="group bg-white/10 hover:bg-black p-3 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
