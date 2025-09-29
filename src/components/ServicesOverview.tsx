@@ -19,6 +19,8 @@ const ServicesOverview: React.FC = () => {
       price: "From PKR 2,999",
       image: servicesImages.engineMaintenance,
       delay: "0",
+      linkText: "Learn More About Engine Maintenance",
+      linkUrl: "/services",
     },
     {
       icon: servicesIcons.carBreak,
@@ -34,6 +36,8 @@ const ServicesOverview: React.FC = () => {
       price: "From PKR 11,499",
       image: servicesImages.breakRepair,
       delay: "100",
+      linkText: "Learn More About Brake Repair",
+      linkUrl: "/services",
     },
     {
       icon: servicesIcons.wheelAlignmentIcon,
@@ -48,6 +52,8 @@ const ServicesOverview: React.FC = () => {
       price: "From PKR 1,999",
       image: servicesImages.wheelAlignment,
       delay: "200",
+      linkText: "Learn More About Wheel Alignment",
+      linkUrl: "/services",
     },
     {
       icon: servicesIcons.spareParts,
@@ -62,6 +68,8 @@ const ServicesOverview: React.FC = () => {
       price: "From PKR 7,499",
       image: servicesImages.autoParts,
       delay: "300",
+      linkText: "Explore More About Auto Parts",
+      linkUrl: "/services",
     },
     {
       icon: servicesIcons.paintIcon,
@@ -76,6 +84,8 @@ const ServicesOverview: React.FC = () => {
       price: "From PKR 6,799",
       image: servicesImages.bodyShop,
       delay: "400",
+      linkText: "View More About Body Shop",
+      linkUrl: "/services",
     },
     {
       icon: servicesIcons.gearIcon,
@@ -86,6 +96,8 @@ const ServicesOverview: React.FC = () => {
       price: "From PKR 13,799",
       image: servicesImages.transmissionService,
       delay: "500",
+      linkText: "Discover More About Transmission Service",
+      linkUrl: "/services",
     },
     {
       icon: servicesIcons.batteryIcon,
@@ -100,6 +112,8 @@ const ServicesOverview: React.FC = () => {
       price: "From PKR 9,999",
       image: servicesImages.batteryReplacement,
       delay: "600",
+      linkText: "Find Out More About Battery Replacement",
+      linkUrl: "/services",
     },
     {
       icon: servicesIcons.dentingIcon,
@@ -114,6 +128,8 @@ const ServicesOverview: React.FC = () => {
       price: "From PKR 14,999",
       image: servicesImages.danting,
       delay: "700",
+      linkText: "Learn More About Detailing Services",
+      linkUrl: "/services",
     },
     {
       icon: servicesIcons.electritionIcon,
@@ -123,6 +139,8 @@ const ServicesOverview: React.FC = () => {
       price: "From PKR 8,999",
       image: servicesImages.electricalService,
       delay: "800",
+      linkText: "Explore More About Electrical System Repair",
+      linkUrl: "/services",
     },
     {
       icon: servicesIcons.wheelAlignmentIcon,
@@ -137,6 +155,8 @@ const ServicesOverview: React.FC = () => {
       price: "Comming Soon",
       image: servicesImages.suspensionSerivice,
       delay: "900",
+      linkText: "Discover More About Suspension Service",
+      linkUrl: "/services",
     },
     {
       icon: servicesIcons.bodyPartsIcon,
@@ -151,6 +171,8 @@ const ServicesOverview: React.FC = () => {
       price: "Comming Soon",
       image: servicesImages.bodyParts,
       delay: "900",
+      linkText: "Discover More About Body Parts",
+      linkUrl: "/services",
     },
   ];
 
@@ -253,10 +275,10 @@ const ServicesOverview: React.FC = () => {
 
                 {/* CTA */}
                 <Link
-                  to="/services"
+                  to={service.linkUrl}
                   className="group/btn inline-flex items-center text-blue-600 hover:text-blue-800 font-bold transition-all duration-300"
                 >
-                  Learn More
+                  {service.linkText}
                   <ArrowRight className="ml-2 w-5 h-5 group-hover/btn:translate-x-1 transition-transform duration-300" />
                 </Link>
               </div>
