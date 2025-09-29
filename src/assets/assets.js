@@ -1,14 +1,7 @@
 import logo from './logo.png';
 import hero from './hero.webp';
 import whatsAppIcon from './whatsAppIcon.png';
-import mechanic from './mechanic.svg';
-import mechanic1 from './mechanic1.svg';
-// import bodyShop from './bodyShop.svg';
-// import bodyShop1 from './bodyShop1.svg';
-// import electrician from './electrician.svg';
-// import paint from './paint.jpg';
-// import wheel from './wheel.jpg';
-// import mech from './mech.jpg';
+
 
 // Sevices Images imports
 import danting from './services/danting.webp';
@@ -26,7 +19,7 @@ import bodyParts from './services/bodyParts.webp';
 import autoParts from './services/autoParts.webp';
 import carPolish from './services/carPolish.webp';
 import bodyShop from './services/bodyShop.webp';
-import howToChooseRightMotorOil from './blogs/howToChooseRightMotorOil.svg';
+import howToChooseRightMotorOil from './blogs/howToChooseRightMotorOil.webp';
 
 // Services Icons Imports
 import bodyPartsIcon from './icons/bodyPartsIcon.png';
@@ -54,21 +47,6 @@ import sufyanAminManager from './sufyanAminManager.jpg';
 
 // Services Images
 export const servicesImages = {
-    // danting,
-    // acService,
-    // wheelAlignment,
-    // transmissionService,
-    // suspensionSerivice,
-    // exhaustService,
-    // engineMaintenance,
-    // electricalService,
-    // breakRepair,
-    // carPainting,
-    // batteryReplacement,
-    // bodyParts,
-    // autoParts,
-    // carPolish,
-    // bodyShop
     danting,
     acService,
     wheelAlignment,
@@ -110,15 +88,6 @@ export const images = {
     logo,
     hero,
     whatsAppIcon,
-    // mechanic,
-    // mechanic1,
-    // bodyShop,
-    // bodyShop1,
-    // danting,
-    // electrician,
-    // paint,
-    // wheel,
-    // mech
 };
 
 
