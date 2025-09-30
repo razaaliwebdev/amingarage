@@ -75,7 +75,7 @@ const WhatsAppButton: React.FC = () => {
               className="h-14 w-14 sm:h-16 sm:w-16"
               src={images.whatsAppIcon}
               alt="WhatsApp"
-              srcSet={`${images.whatsAppIcon2x} 2x, ${images.whatsAppIcon3x} 3x`}
+              // srcSet={`${images.whatsAppIcon2x} 2x, ${images.whatsAppIcon3x} 3x`}
             />
           )}
         </div>
