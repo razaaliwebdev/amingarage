@@ -189,7 +189,7 @@ const blogs = [
     title: "Car Painting: Restoring Beauty and Value to Your Vehicle",
     excerpt:
       "Car Painting is an art and science that restores your vehicle’s beauty while protecting it from damage. At Amin Garage – Expert Car Repair Workshop in Faqir Wali, we blend craftsmanship and modern technology to deliver stunning results.",
-    image: blogImages.howToPaintAnOldCarOverExistingPaint,
+    image: blogImages.painting,
     author: "Amin Garage",
     date: "March 28, 2024",
     category: "Maintenance",

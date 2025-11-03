@@ -1,7 +1,7 @@
 import airConditioningServiceBeatHeat from "./airConditioningServiceBeatHeat.webp";
 import avoidCostlyMistakesHowToChooseRightCollisionRepairShopInLowCity from "./avoidCostlyMistakesHowToChooseRightCollisionRepairShopInLowCity.webp";
 import howToChooseRightMotorOil from "./howToChooseRightMotorOil.webp";
-import signsYourBreaksNeedImmediateAttention from "./signsYourBreaksNeedImmediateAttention.webp";
+import painting from "./painting.webp";
 import springCarDetailingRefreshYourRideAfterAHarshWinter from "./springCarDetailingRefreshYourRideAfterAHarshWinter.webp";
 import theExistingFeatureOfAutomotiveSpareParts from "./theExistingFeatureOfAutomotiveSpareParts.webp";
 import theImportanceOfRegularEngineDiagostic from "./theImportanceOfRegularEngineDiagostic.webp";
@@ -24,7 +24,6 @@ export const blogImages = {
   airConditioningServiceBeatHeat,
   avoidCostlyMistakesHowToChooseRightCollisionRepairShopInLowCity,
   howToChooseRightMotorOil,
-  signsYourBreaksNeedImmediateAttention,
   springCarDetailingRefreshYourRideAfterAHarshWinter,
   theExistingFeatureOfAutomotiveSpareParts,
   theImportanceOfRegularEngineDiagostic,
@@ -34,7 +33,8 @@ export const blogImages = {
   wheelAlignment,
   engineMaintenance,
   autoParts,
-  bodyParts
+  bodyParts,
+  painting
 }
 
 
